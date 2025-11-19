@@ -1,5 +1,5 @@
 import DashboardPlayground from "../DashboardPlayground";
-import TrustedByTile from "../TrustedByTile";
+import TrustedByTile from "./TrustedByTile";
 
 export default function Hero() {
     return (

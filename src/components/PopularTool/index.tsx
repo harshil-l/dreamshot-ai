@@ -16,14 +16,14 @@ export default function PopularTool() {
             </h1>
 
             {/* Tool cards - Responsive grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 w-full max-w-7xl px-4">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 w-full max-w-7xl px-4">
                 {DASHBOARD_POPULAR_TOOLS.map((tool, index) => (
                     <ToolCard key={index} tool={tool} />
                 ))}
             </div>
 
             <div className="flex items-center justify-center">
-                <Button variant='dark' className='py-4 h-12 has-[>svg]:px-6!'>Explore more Tools <ArrowRightIcon className="w-4 h-4" /></Button>
+                <Button variant='dark' className='py-4 h-12 group has-[>svg]:px-6!'>Explore more Tools <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-2 transition-all duration-300" /></Button>
             </div>      
     </div>
   );

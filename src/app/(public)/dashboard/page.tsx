@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from "react"
 import Hero from "@/components/Hero"
 import PopularTool from "@/components/PopularTool"
 import OurFeatures from "@/components/OurFeatures"
@@ -8,6 +7,7 @@ import Testimonials from "@/components/Testimonials"
 import Inspiration from "@/components/Inspiration"
 import FAQs from "@/components/FAQs"
 import CurvedCarousel from "@/components/CurvedCarousel"
+import Footer from "@/components/Footer"
 
 export default function Dashboard() {
   return (
@@ -32,6 +32,9 @@ export default function Dashboard() {
 
       {/* Curved Carousel */}
       <CurvedCarousel />
+
+      {/* Footer */}
+      <Footer />
 
     </div>
   )

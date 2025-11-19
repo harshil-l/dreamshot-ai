@@ -7,15 +7,18 @@ interface ToolCardProps {
 
 export default function ToolCard({ tool }: ToolCardProps) {
     return (
-        <div className="flex flex-col items-center w-full max-w-[296px] mx-auto">
-            {/* Image container - Responsive square, maintains 296px max */}
-            <div className="w-full aspect-square max-w-[296px] relative rounded-lg overflow-hidden">
+        <div className="flex flex-col items-center w-full 
+                        max-w-[180px] sm:max-w-[220px] md:max-w-[260px] lg:max-w-[296px] mx-auto">
+            {/* Image container - Responsive square, adjusts max size by screen */}
+            <div className="w-full aspect-square 
+                            max-w-[180px] sm:max-w-[220px] md:max-w-[260px] lg:max-w-[296px] 
+                            relative rounded-lg overflow-hidden">
                 <Image
                     src={tool.imageUrl}
                     alt={tool.title}
                     fill
                     className="object-cover"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 296px"
+                    sizes="(max-width: 640px) 180px, (max-width: 768px) 220px, (max-width: 1024px) 260px, 296px"
                 />
             </div>
 

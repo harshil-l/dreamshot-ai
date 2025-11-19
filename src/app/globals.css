@@ -67,6 +67,7 @@
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
+  --footer-primary: #111826;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -116,6 +117,7 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --footer-primary: #111826;
 }
 
 @layer base {
@@ -139,8 +141,6 @@
 .curved-carousel-wrapper {
   position: relative;
   transform-style: preserve-3d;
-  width: 1160px;
-  height: 260px;
   margin: 0 auto;
 }
 
@@ -153,8 +153,6 @@
 
 .curved-carousel-image-container {
   position: relative;
-  width: 200px;
-  height: 200px;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid oklch(0.922 0 0);
@@ -171,30 +169,6 @@
   height: 100%;
   object-fit: cover;
   display: block;
-}
-
-@media (max-width: 768px) {
-  .curved-carousel-image-container {
-    width: 150px;
-    height: 150px;
-  }
-
-  .curved-carousel-wrapper {
-    width: 870px;
-    height: 220px;
-  }
-}
-
-@media (max-width: 640px) {
-  .curved-carousel-image-container {
-    width: 120px;
-    height: 120px;
-  }
-
-  .curved-carousel-wrapper {
-    width: 696px;
-    height: 200px;
-  }
 }
 
 .animate-scroll {

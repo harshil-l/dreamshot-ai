@@ -1,6 +1,8 @@
+'use client'
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import * as Collapsible from "@radix-ui/react-collapsible";
+
 import {
     Accordion,
     AccordionContent,
@@ -19,7 +21,7 @@ export const SingleFaq = ({ answer, question }: SingleFaqProps) => {
     return (
         <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-                <AccordionTrigger className="text-base font-medium text-headerBG tracking-tight">{question}</AccordionTrigger>
+                <AccordionTrigger className="text-base hover:cursor-pointer font-medium text-headerBG tracking-tight">{question}</AccordionTrigger>
                 <AccordionContent className="text-sm text-gray-500 tracking-tight">{answer}</AccordionContent>
             </AccordionItem>
         </Accordion>
