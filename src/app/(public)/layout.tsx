@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 
 export default function PublicLayout({
     children,
@@ -6,7 +5,16 @@ export default function PublicLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <div className="w-full h-full">
+        <div 
+            className="w-full min-h-screen"
+            style={{
+                backgroundImage: 'url(/assets/cloud-background.png)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                backgroundAttachment: 'fixed'
+            }}
+        >
             {children}
         </div>
     );

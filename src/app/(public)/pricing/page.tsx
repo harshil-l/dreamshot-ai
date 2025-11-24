@@ -10,7 +10,7 @@ export default function Pricing() {
     // Track selected billing period: 'monthly' or 'annually'
 
     return (
-        <div>
+        <div className="pt-20 min-h-screen">
 
             {/* Pricing Toggle - Classic CSS with Math */}
             <PricingPlan />

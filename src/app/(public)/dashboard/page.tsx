@@ -11,7 +11,16 @@ import Footer from "@/components/Footer"
 
 export default function Dashboard() {
   return (
-    <div className="flex flex-col gap-10 ">
+    <div 
+    className="flex flex-col gap-10 pt-20 min-h-screen "
+    style={{
+      backgroundImage: 'url(/assets/main-background.png)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundAttachment: 'fixed'
+    }}
+    >
       {/* Hero */}
       <Hero />
 

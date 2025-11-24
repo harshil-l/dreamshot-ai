@@ -3,7 +3,7 @@ import { dialogAtom } from "@/atoms/dialogAtom";
 import { customToast } from "@/common";
 import { Button } from "@/components/ui/button";
 import { DialogBase } from "@/components/DialogBase";
-import { CORE_API_ENDPOINT } from "@/constants/faceswap.constants";
+import { CORE_API_ENDPOINT } from "@/constants/runtime.constants";
 import { auth } from "@/firebase";
 import axios from "axios";
 import { useAtom } from "jotai";

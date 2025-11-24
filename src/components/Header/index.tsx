@@ -20,8 +20,8 @@ export default function Header() {
     }
 
     return (
-        <header className="w-full ">
-            <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <header className="w-full z-50 fixed backdrop-blur-xl top-0 left-0 right-0 mb-10">
+            <nav className="container mx-auto px-4 py-4 flex items-center justify-between bg-transparent" style={{ backgroundColor: 'transparent' }}>
                 {/* Logo/Brand */}
                 <Link href="/dashboard" className="text-xl font-bold">
                     <LogoIcon className="w-40 h-fit" />

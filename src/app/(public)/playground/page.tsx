@@ -10,7 +10,7 @@ export default function Playground() {
     // Track selected billing period: 'monthly' or 'annually'
 
     return (
-        <div className="flex flex-col items-center justify-center gap-20 ">
+        <div className="flex flex-col items-center justify-center gap-20">
             <PlaygroundSection />  
             <HowItWork />
             <Examples />

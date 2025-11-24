@@ -1,5 +1,6 @@
 import { Timestamp } from "firebase/firestore";
 import { DialogType } from "@/atoms/dialogAtom";
+import { ToolConfigJson } from "@/config/tools.server";
 
 
 export interface DashboardPopularTool {
@@ -132,4 +133,12 @@ export interface AvailableCreditsProps {
     className?: string;
     isHeader?: boolean;
     removeBG?: boolean;
+}
+
+// Re-export ToolConfigJson for convenience
+export type { ToolConfigJson };
+
+// Component prop interfaces for tool-related components
+export interface ToolContextValue {
+    toolConfig: ToolConfigJson | null;
 }
