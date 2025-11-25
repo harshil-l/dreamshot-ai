@@ -1,0 +1,107 @@
+{
+  "id": "ai-elf-filter",
+  "title": "The Ultimate AI Elf Filter",
+  "playgroundTitle": "The Ultimate AI Elf Filter",
+  "playgroundDescription": "Unleash your inner elf with our powerful AI elf filter. Create stunning, high-quality elf portraits from your photos in just a few clicks.",
+  "highlightWords": [],
+  "metadata": {
+    "title": "The Ultimate AI Elf Filter: Transform Photos Instantly",
+    "description": "Unleash your inner elf with our powerful AI elf filter. Create stunning, high-quality elf portraits from your photos in just a few clicks.",
+    "alternates": {
+      "canonical": ""
+    }
+  },
+  "toolType": "image-effects",
+  "toolCategory": "image-effects",
+  "postPrefix": "image-effects",
+  "credit": 40,
+  "buttonText": "Generate Elf Magic",
+  "inputType": "single",
+  "effectId": "elfGenerator",
+  "model": "image-effects",
+  "cardImage": "https://assets.remixai.io/Public/samples/Red-Hulk-featured.webp",
+  "cardVideo": null,
+  "transformationImages": {
+    "transformationPreview": "https://assets.remixai.io/Public/samples/Red-Hulk.webp"
+  },
+  "dualUploadLabels": {},
+  "recommendedEffects": {
+    "id": [
+      "add-clouds-to-photo",
+      "add-crown-to-photo",
+      "add-flower-crown-to-photo"
+    ],
+    "heading": "Check Out Other Trending Image Effects"
+  },
+  "examples": {
+    "heading": "See the Stunning Results",
+    "title": "See the Stunning Results",
+    "description": "",
+    "images": [
+      {
+        "image": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webm",
+        "alt": "AI Red Hulk Transformation"
+      },
+      {
+        "image": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webm",
+        "alt": "AI Red Hulk Transformation"
+      }
+    ]
+  },
+  "sampleImages": [
+    {
+      "mini": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp",
+      "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
+    }
+  ],
+  "howItWorks": {
+    "heading": "How to Use ai elf Filter?",
+    "description": "Follow these simple steps to transform your photos with the AI elf filter.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Upload Image",
+        "bulletPoints": [
+          "Upload a high-quality image that you want to convert using the ai elf filter style."
+        ]
+      },
+      {
+        "step": 2,
+        "title": "Apply Image Effect",
+        "bulletPoints": [
+          "After uploading, click the generate button and AI will turn your image into an elf style."
+        ]
+      },
+      {
+        "step": 3,
+        "title": "Download & Share",
+        "bulletPoints": [
+          "Once the image is generated, download it and share it with your friends and family."
+        ]
+      }
+    ]
+  },
+  "faqHeading": "Frequently Asked Questions",
+  "faqs": [
+    {
+      "question": "What is the AI Elf Filter?",
+      "answer": "The AI Elf Filter is an advanced image effect that uses artificial intelligence to magically transform your photos. It applies fantasy-inspired elven characteristics, such as pointed ears and ethereal features, to the subjects in your images."
+    },
+    {
+      "question": "How long does it take to apply the AI Elf Filter?",
+      "answer": "The processing time can vary slightly depending on the complexity and resolution of your photo. However, our platform is optimized for speed, ensuring you receive your elf-transformed image much faster than with competing services."
+    },
+    {
+      "question": "Is the AI Elf Filter free to use?",
+      "answer": "Yes, it is free to get started! Simply sign up for a free account on our website, and we will provide you with complimentary credits that you can use to try out the AI Elf Filter and other tools."
+    },
+    {
+      "question": "Are my uploaded photos safe and private?",
+      "answer": "Absolutely. We take your privacy very seriously. Your images are uploaded over a secure connection, are used only to generate the filter effect, and are automatically deleted from our servers after processing. We never share your data with third parties."
+    },
+    {
+      "question": "What kind of photos work best with this filter?",
+      "answer": "For the best results, we recommend using clear, high-quality portrait photos where the face is well-lit and facing forward. This allows the AI to accurately detect facial features and apply the elven details seamlessly."
+    }
+  ]
+}
