@@ -11,17 +11,19 @@
       "canonical": ""
     }
   },
-  "toolType": "",
-  "toolCategory": "",
-  "postPrefix": "",
-  "credit": "",
-  "buttonText": "Generate Sharp Image",
-  "inputType": "",
-  "effectId": "",
-  "model": "",
-  "cardImage": "",
-  "cardVideo": "",
-  "transformationImages": {},
+"toolType": "image-effects",
+    "toolCategory": "image-effects",
+    "postPrefix": "image-effects",
+    "credit": 8,
+    "buttonText": "Apply Image Effect",
+    "inputType": "single",
+    "effectId": "birthdayhattophoto",
+    "model": "image-effects",
+    "cardImage": "https://assets.remixai.io/Public/samples/Add-Birthday-Hat-featured.webp",
+    "cardVideo": null,
+    "transformationImages": {
+        "transformationPreview": "https://assets.remixai.io/Public/samples/Add-Birthday-Hat.webp"
+    },
   "dualUploadLabels": {},
   "recommendedEffects": {
     "id": [
