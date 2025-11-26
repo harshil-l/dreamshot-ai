@@ -14,7 +14,12 @@ export default function PricingPlan() {
     }, [billingPeriod]);
 
     return (
-        <div className="flex flex-col items-center gap-10 justify-center">
+        <div className="flex flex-col mb-15 items-center gap-10 justify-center" style={{
+            backgroundImage: 'url(/assets/cloud-background.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+        }}>
 
             {/* Title and Description */}
             <div className="flex flex-col text-center items-center gap-10 justify-center mt-15 px-4">

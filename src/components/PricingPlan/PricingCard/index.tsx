@@ -9,7 +9,7 @@ interface PricingCardProps {
 
 export default function PricingCard({ plan }: PricingCardProps) {
     return (
-        <div className="p-7 bg-gray-100 rounded-lg flex flex-col gap-4">
+        <div className="p-7 mb-10 bg-white/50 border rounded-lg flex flex-col gap-4" style={{ borderColor: "#E4E8EF" }}>
             {/* Section 1: Title and Description */}
             <div className="flex flex-col justify-center gap-2">
                 <h2 className="text-2xl md:text-2xl lg:text-3xl text-semibold">{plan.name}</h2>

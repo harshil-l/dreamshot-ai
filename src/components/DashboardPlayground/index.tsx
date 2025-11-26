@@ -11,7 +11,7 @@ export default function DashboardPlayground() {
   };
 
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 mb-10 md:mb-0">
       <h1 className="text-4xl sm:text-5xl font-semibold text-center">
         AI Without Limits –<span className="block lg:inline"></span>
         <span className="block lg:block">

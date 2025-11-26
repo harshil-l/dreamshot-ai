@@ -15,7 +15,7 @@ export default function PopularTool() {
     };
 
     return (
-        <div className="flex flex-col items-center gap-10 justify-center mt-15">
+        <div className="flex flex-col items-center gap-10 justify-center">
 
             <TextSeparator textSeparatorText="Popular Tools" />
 

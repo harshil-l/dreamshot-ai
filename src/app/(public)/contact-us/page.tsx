@@ -5,7 +5,7 @@ import ContactUsPoster from "@/components/ContactUsPoster";
 
 export default function ContactUs() {
     return (
-        <div className="pt-20 min-h-screen">
+        <div className="pt-20 min-h-screen" >
             <ContactUsPoster />
 
             <FAQs />

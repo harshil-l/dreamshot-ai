@@ -24,7 +24,7 @@ export default function InspirationDialog({ inspiration }: InspirationDialogProp
         <DialogBase
             name="inspirationDialog"
             title="Inspiration Details"
-            className="!max-w-[60vw] sm:!max-w-[60vw] w-full h-[70vh]"
+            className="!max-w-[60vw] w-full h-[70vh]"
             hideHeader={true}
             removeCloseButton={true}
             disableClose={false}
@@ -33,13 +33,13 @@ export default function InspirationDialog({ inspiration }: InspirationDialogProp
                 <div className="flex flex-col md:flex-row gap-6 w-full h-full">
 
                     {/* Left: Image (60% width on desktop) */}
-                    <div className="w-full md:w-[60%] h-[50vh] md:h-full">
+                    <div className="w-full md:w-[60%] h-[63vh] ">
                         <div className="relative w-full h-full rounded-2xl overflow-hidden items-center justify-center">
                             <Image
                                 src={inspiration.imageUrl}
                                 alt={inspiration.title || 'Inspiration image'}
                                 fill
-                                className="object-contain bg-gray-100"
+                                className="object-cover bg-gray-100"
                                 sizes="(max-width: 768px) 100vw, 60vw"
                                 priority
                                 unoptimized={inspiration.imageUrl.startsWith('/')}

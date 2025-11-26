@@ -4,7 +4,7 @@ import { DASHBOARD_OUR_FEATURES } from "@/constants/dashboard.constants";
 
 export default function OurFeatures() {
     return (
-        <div className="flex flex-col items-center gap-10 justify-center mt-15 px-4">
+        <div className="flex flex-col items-center gap-10 justify-center px-4">
             <TextSeparator textSeparatorText="Our Features" />
 
             <h1 className="text-2xl md:text-3xl lg:text-4xl text-center font-bold">

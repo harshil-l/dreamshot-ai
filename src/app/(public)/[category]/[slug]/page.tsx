@@ -123,7 +123,7 @@ export default async function ToolPage({ params }: Props) {
                 {toolConfig?.faqs && <FAQs />}
 
                 {/* Inspiration Section - Only render if inspiration data exists */}
-                 <Inspiration />
+                <Inspiration />
                 
 
                 {/* Footer */}

@@ -7,7 +7,7 @@ import {
 export default function TrustedByTile() {
     return (
         <div>
-            <div className="border rounded-full shadow-md h-10 px-3 bg-white flex items-center justify-between w-fit mx-auto hover:shadow-lg hover:-translate-y-1 transition duration-200">
+            <div className="border rounded-full shadow-md mt-15 h-10 px-3 bg-white flex items-center justify-between w-fit mx-auto hover:shadow-lg hover:-translate-y-1 transition duration-200">
                 <div className="*:data-[slot=avatar]:ring-background flex items-center -space-x-2 *:data-[slot=avatar]:size-6 *:data-[slot=avatar]:ring-2">
                     <Avatar>
                         <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />

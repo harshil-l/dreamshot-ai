@@ -62,7 +62,12 @@ export default function AllToolsClient({ tools }: AllToolsClientProps) {
     };
 
     return (
-        <div className="flex flex-col items-center gap-10 justify-center pt-20 min-h-screen">
+        <div className="flex flex-col items-center gap-10 justify-center pt-20 min-h-screen" style={{
+            backgroundImage: 'url(/assets/cloud-background.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+        }}>
             {/* Title and Description */}
             <div className="flex flex-col text-center items-center gap-10 justify-center mt-15 px-4">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold px-4">

@@ -15,7 +15,7 @@ export default function Testimonials() {
 
 
     return (
-        <div className="flex flex-col items-center gap-10 justify-center mt-15 px-4">
+        <div className="flex flex-col items-center gap-10 justify-center px-4">
             <TextSeparator textSeparatorText="Testimonials" />
 
             <h1 className="text-2xl md:text-3xl lg:text-4xl text-center font-bold px-4">

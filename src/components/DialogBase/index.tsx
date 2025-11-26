@@ -105,7 +105,7 @@ export const DialogBase = ({
           >
             <div
               className={twMerge(
-                pClass ? pClass : "p-4 sm:p-6",
+                pClass ? pClass : "p-0 ",
                 isPaddingAroundRemoved && "p-0 sm:p-0",
                 " flex flex-1 flex-col min-h-0"
               )}
