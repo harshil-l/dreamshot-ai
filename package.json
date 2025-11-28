@@ -23,6 +23,7 @@
     "clsx": "^2.1.1",
     "cobe": "^0.6.5",
     "firebase": "^12.6.0",
+    "firebase-functions": "^7.0.0",
     "jotai": "^2.15.1",
     "lucide-react": "^0.553.0",
     "motion": "^12.23.24",

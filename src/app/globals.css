@@ -126,6 +126,10 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden; 
+  }
+  html {
+    overflow-x: hidden; /* Also add this for extra safety */
   }
 }
 
@@ -142,6 +146,8 @@
   position: relative;
   transform-style: preserve-3d;
   margin: 0 auto;
+  max-width: 100%;
+  overflow: visible;
 }
 
 .curved-carousel-item {
@@ -262,4 +268,9 @@
   animation-timing-function: linear !important;
   animation-iteration-count: infinite !important;
   will-change: transform;
+}
+
+.marquee-container:hover .animate-marquee,
+.marquee-container:hover .animate-marquee-vertical {
+  animation-play-state: paused !important;
 }

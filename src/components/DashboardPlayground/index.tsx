@@ -19,7 +19,7 @@ export default function DashboardPlayground() {
           Every Tool You Need, in One Place
         </span>
       </h1>
-      <p className="text-center text-gray-500 max-w-xl mx-auto ">
+      <p className="text-center px-2 text-gray-500 max-w-xl mx-auto ">
         From content creation to innovation, get the AI tools you need to work smarter. Boost
         efficiency, unlock creativity, and streamline your tasks effortlessly.
       </p>

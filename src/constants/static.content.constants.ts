@@ -1,13 +1,7 @@
 // Unified static content data for non-dynamic pages (dashboard, pricing, contact-us, etc.)
 
-import { DashboardPopularTool } from "@/types";
+import { DashboardPopularTool, StaticExample, StaticFaq, StaticHowItWorkStep } from "@/types";
 import { DASHBOARD_POPULAR_TOOLS } from "./dashboard.constants";
-
-// FAQs
-export interface StaticFaq {
-    question: string;
-    answer: string;
-}
 
 export const STATIC_FAQS = {
     heading: "Ask Anything, Get Answers",
@@ -51,13 +45,6 @@ export const STATIC_FAQS = {
     ] as StaticFaq[]
 };
 
-// How It Works
-export interface StaticHowItWorkStep {
-    step: number;
-    title: string;
-    bulletPoints: string[];
-}
-
 export const STATIC_HOW_IT_WORKS = {
     heading: "How It Work",
     title: "How Our AI Transforms Your Photos",
@@ -87,12 +74,6 @@ export const STATIC_HOW_IT_WORKS = {
     ] as StaticHowItWorkStep[]
 };
 
-// Examples
-export interface StaticExample {
-    beforeImageUrl: string;
-    afterImageUrl: string;
-}
-
 export const STATIC_EXAMPLES = {
     heading: "Examples",
     title: "Before & After Previews",
@@ -113,10 +94,17 @@ export const STATIC_EXAMPLES = {
     ] as StaticExample[]
 };
 
-// Similar Tools
 export const STATIC_SIMILAR_TOOLS = {
     heading: "Similar Tools",
     title: "Recommended for You",
     tools: DASHBOARD_POPULAR_TOOLS as DashboardPopularTool[]
 };
 
+export const STATIC_FEATURES: string[] = [
+    "Easy-to-use interface",
+    "High-resolution image processing",
+    "Secure & private uploads",
+    "AI-powered effects and filters",
+    "Fast image transformation",
+    "Download & share options"
+];

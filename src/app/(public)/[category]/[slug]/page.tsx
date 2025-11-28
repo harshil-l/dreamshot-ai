@@ -9,7 +9,6 @@ import FAQs from "@/components/FAQs";
 import Footer from "@/components/Footer";
 import { Metadata } from "next";
 import Testimonials from "@/components/Testimonials";
-import CurvedCarousel from "@/components/CurvedCarousel";
 import Inspiration from "@/components/Inspiration";
 
 interface Props {
@@ -124,7 +123,6 @@ export default async function ToolPage({ params }: Props) {
 
                 {/* Inspiration Section - Only render if inspiration data exists */}
                 <Inspiration />
-                
 
                 {/* Footer */}
                 <Footer />

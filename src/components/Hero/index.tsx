@@ -10,6 +10,7 @@ export default function Hero() {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundAttachment: 'fixed'
+            
         }}>
             <TrustedByTile />
             <DashboardPlayground />      

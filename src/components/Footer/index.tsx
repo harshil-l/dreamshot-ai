@@ -6,7 +6,7 @@ const FOOTER_BACKGROUND_COLOR = "var(--footer-primary)"; // Centralized to keep 
 export default function Footer() {
     return (
         <footer
-            className="w-full p-6 sm:p-8 md:p-12 mt-10 "
+            className="w-full p-6 sm:p-8 md:p-12 mt-20 "
             style={{ backgroundColor: FOOTER_BACKGROUND_COLOR }}
         >
             <div className="flex md:justify-between flex-col md:flex-row gap-10 w-full max-w-7xl mx-auto">
@@ -35,9 +35,9 @@ export default function Footer() {
                 </div>
 
                 {/* Right Section */}
-                <div className="flex flex-col w-full sm:flex-row flex-2 justify-between min-h-0 max-h-full mb-10 sm:mb-0 text-center sm:text-left">
+                <div className="flex flex-col w-full sm:flex-row flex-2  justify-between min-h-0 max-h-full">
                     
-                    <div className="flex flex-col ">
+                    <div className="flex flex-col mb-10 sm:mb-0 min-w-[160px] text-center sm:text-left">
                         <h1 className="text-white text-lg md:text-xl mb-4 font-bold">AI Tools</h1>
                         <h3 className="text-gray-400 text-sm md:text-base">Image to Video</h3>
                         <h3 className="text-gray-400 text-sm md:text-base">Upscale Image</h3>
@@ -51,7 +51,7 @@ export default function Footer() {
                         <h3 className="text-gray-400 text-sm md:text-base">Big Foot Generator</h3>
                     </div>
 
-                    <div className="flex flex-col ">
+                    <div className="flex flex-col mb-10 sm:mb-0 min-w-[160px] text-center sm:text-left">
                         <h1 className="text-white text-lg md:text-xl mb-4 font-bold">All Filters</h1>
                         <h3 className="text-gray-400 text-sm md:text-base">Cyberpunk Filter</h3>
                         <h3 className="text-gray-400 text-sm md:text-base">Spider Man Filter</h3>
@@ -63,7 +63,7 @@ export default function Footer() {
                         <h3 className="text-gray-400 text-sm md:text-base">Color Restore Filter</h3>
                     </div>
 
-                    <div className="flex flex-col ">
+                    <div className="flex flex-col mb-10 sm:mb-0 min-w-[160px] text-center sm:text-left">
                         <div className="mb-10">
                             <h1 className="text-white text-lg md:text-xl mb-4 font-bold">Business</h1>
                             <h3 className="text-gray-400 text-sm md:text-base">About Us</h3>

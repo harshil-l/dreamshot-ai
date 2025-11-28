@@ -40,18 +40,14 @@ export type Plan = {
     duration: PlanDuration;
     credits: number;
     features: string[];
-
-    //   price: number;
-    //   duration: PlanDuration;
-    //   credits: number;
-    //   priceId: string;
-    //   name: PlanNameT;
-    //   discountPrice: number;
-    //   id: string;
-    //   maxDurationSeconds: number;
-    //   priceIds: string[];
-    //   isFeatured: boolean;
-    //   priceSuffix: string;
+    id: string;
+    // Stripe integration fields - required for checkout
+    priceId: string;
+    planId: string;
+    // Optional fields for enhanced UI
+    discountPrice?: number;
+    isFeatured?: boolean;
+    priceSuffix?: string;
 };
 
 
@@ -139,10 +135,24 @@ export interface AvailableCreditsProps {
     removeBG?: boolean;
 }
 
-// Re-export ToolConfigJson for convenience
 export type { ToolConfigJson };
 
-// Component prop interfaces for tool-related components
 export interface ToolContextValue {
     toolConfig: ToolConfigJson | null;
+}
+
+export interface StaticFaq {
+    question: string;
+    answer: string;
+}
+
+export interface StaticHowItWorkStep {
+    step: number;
+    title: string;
+    bulletPoints: string[];
+}
+
+export interface StaticExample {
+    beforeImageUrl: string;
+    afterImageUrl: string;
 }

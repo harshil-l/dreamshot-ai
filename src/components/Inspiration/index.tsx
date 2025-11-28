@@ -9,12 +9,6 @@ import InspirationDialog from "../Dialogs/InspirationDialog";
 import { useHandleDialogType } from "@/hooks/useHandleDialogType";
 import Image from "next/image";
 
-/**
- * Inspiration component displaying two marquee carousels with inspiration images
- * - First carousel: normal direction (left to right)
- * - Second carousel: reverse direction (right to left)
- * - Clicking an image opens a dialog with image details
- */
 export default function Inspiration() {
     const [selectedInspiration, setSelectedInspiration] = useState<DashboardInspiration | null>(null);
     const { handleDialogType } = useHandleDialogType();
@@ -53,14 +47,14 @@ export default function Inspiration() {
             </h1>
 
             {/* Marquee carousel - left to right */}
-            <div className="w-full">
+            <div className="w-full marquee-container">
                 <Marquee reverse={true} repeat={4} className="w-full">
                     {DASHBOARD_INSPIRATION_LINE_1.map(renderInspirationCard)}
                 </Marquee>
             </div>
 
             {/* Marquee carousel - right to left */}
-            <div className="w-full">
+            <div className="w-full marquee-container">
                 <Marquee reverse={false} repeat={4} className="w-full">
                     {DASHBOARD_INSPIRATION_LINE_2.map(renderInspirationCard)}
                 </Marquee>
