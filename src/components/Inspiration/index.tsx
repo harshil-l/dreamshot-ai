@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { DASHBOARD_INSPIRATION_LINE_1, DASHBOARD_INSPIRATION_LINE_2 } from "@/constants/dashboard.constants";
+import { DASHBOARD_INSPIRATION_LINE_1, DASHBOARD_INSPIRATION_LINE_2 } from "@/constants/static.content.constants";
 import { DashboardInspiration } from "@/types";
 import TextSeparator from "../TextSeparator";
 import { Marquee } from "@/components/ui/marquee";

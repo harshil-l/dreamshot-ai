@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useMemo, useState, useRef, useCallback } from "react";
-import { CURVED_CAROUSEL_IMAGES } from "@/constants/dashboard.constants";
+import { CURVED_CAROUSEL_IMAGES } from "@/constants/static.content.constants";
 import { Button } from "../ui/button";
 
 

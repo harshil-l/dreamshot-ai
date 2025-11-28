@@ -1,6 +1,6 @@
 import TextSeparator from "../TextSeparator";
 import ToolCard from "../PopularTool/ToolCard";
-import { DASHBOARD_POPULAR_TOOLS } from "@/constants/dashboard.constants";
+import { DASHBOARD_POPULAR_TOOLS } from "@/constants/static.content.constants";
 import { ToolConfigJson } from "@/config/tools.server";
 import { DashboardPopularTool } from "@/types";
 import Link from "next/link";

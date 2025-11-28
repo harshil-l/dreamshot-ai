@@ -2,7 +2,7 @@
 
 import TextSeparator from "../TextSeparator";
 import ToolCard from "./ToolCard";
-import { DASHBOARD_POPULAR_TOOLS } from "@/constants/dashboard.constants";
+import { DASHBOARD_POPULAR_TOOLS } from "@/constants/static.content.constants";
 import { Button } from "../ui/button";
 import { ArrowRightIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
@@ -20,8 +20,8 @@ export default function PopularTool() {
             <TextSeparator textSeparatorText="Popular Tools" />
 
             <h1 className="text-2xl md:text-3xl lg:text-4xl text-center font-bold px-4">
-                Experience the Next Generation<br />
-                of Tools
+                Cutting-Edge Tools for Image and <br />
+                 Video Creation
             </h1>
 
             {/* Tool cards - Responsive grid */}

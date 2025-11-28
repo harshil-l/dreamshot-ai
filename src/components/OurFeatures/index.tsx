@@ -1,6 +1,6 @@
 import OurFeatureCard from "./OurFeatureCard";
 import TextSeparator from "../TextSeparator";
-import { DASHBOARD_OUR_FEATURES } from "@/constants/dashboard.constants";
+import { DASHBOARD_OUR_FEATURES } from "@/constants/static.content.constants";
 
 export default function OurFeatures() {
     return (
@@ -8,11 +8,11 @@ export default function OurFeatures() {
             <TextSeparator textSeparatorText="Our Features" />
 
             <h1 className="text-2xl md:text-3xl lg:text-4xl text-center font-bold">
-                What Makes Us Magical
+                Create All Images & Videos in <br /> One Platform
             </h1>
 
             {/* Feature cards container */}
-            <div className="flex flex-col gap-12 md:gap-16 w-full max-w-6xl">
+            <div className="flex flex-col gap-4 w-full max-w-6xl">
                 {DASHBOARD_OUR_FEATURES.map((feature, index) => (
                     <OurFeatureCard index={index} key={index} feature={feature} />
                 ))}

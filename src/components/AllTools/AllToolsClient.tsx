@@ -84,31 +84,31 @@ export default function AllToolsClient({ tools }: AllToolsClientProps) {
             {/* Filters and Search */}
             <div className="w-full px-2 sm:px-4 max-w-7xl mx-auto">
                 <div className="flex items-center gap-2 sm:gap-4 justify-between md:flex-row flex-col">
-                    {/* Filter buttons - wrap on very small screens, smaller padding/text */}
-                    <div className="flex items-center gap-2 sm:gap-4 flex-wrap justify-center md:justify-start w-full md:w-auto">
+                    {/* Filter buttons - single line, no wrapping */}
+                    <div className="flex items-center gap-2 sm:gap-3 md:gap-4 justify-center md:justify-start w-full md:w-auto flex-nowrap overflow-x-auto">
                         <Button
                             variant={activeFilter === "all" ? "dark" : "outline"}
-                            className="py-2 sm:py-3 px-2 sm:px-6 h-9 sm:h-10 rounded-sm text-xs sm:text-sm whitespace-nowrap"
+                            className="py-2.5 sm:py-3 px-3 sm:px-4 md:px-6 h-10 sm:h-11 rounded-sm text-xs sm:text-sm md:text-base whitespace-nowrap shrink-0"
                             onClick={() => handleFilterClick("all")}
                         >
                             All
                         </Button>
                         <Button
                             variant={activeFilter === "image-effects" ? "dark" : "outline"}
-                            className="py-2 sm:py-3 px-2 sm:px-6 h-9 sm:h-10 rounded-sm text-xs sm:text-sm whitespace-nowrap"
+                            className="py-2.5 sm:py-3 px-3 sm:px-4 md:px-6 h-10 sm:h-11 rounded-sm text-xs sm:text-sm md:text-base whitespace-nowrap shrink-0"
                             onClick={() => handleFilterClick("image-effects")}
                         >
                             Image Tools
                         </Button>
                         <Button
                             variant={activeFilter === "video-effects" ? "dark" : "outline"}
-                            className="py-2 sm:py-3 px-2 sm:px-6 h-9 sm:h-10 rounded-sm text-xs sm:text-sm whitespace-nowrap"
+                            className="py-2.5 sm:py-3 px-3 sm:px-4 md:px-6 h-10 sm:h-11 rounded-sm text-xs sm:text-sm md:text-base whitespace-nowrap shrink-0"
                             onClick={() => handleFilterClick("video-effects")}
                         >
                             Video Tools
                         </Button>
                     </div>
-                    <div className="relative w-full md:w-auto max-w-md mt-2 md:mt-0">
+                    <div className="relative w-full md:flex-1 md:max-w-xl mt-2 md:mt-0">
                         <span className="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none">
                             <Search className="w-4 h-4" />
                         </span>
@@ -117,7 +117,7 @@ export default function AllToolsClient({ tools }: AllToolsClientProps) {
                             placeholder="Search"
                             value={searchQuery}
                             onChange={handleSearchChange}
-                            className="w-full h-10 pl-10 max-w-xl text-black shadow-none rounded-sm"
+                            className="w-full h-10 pl-10 text-black shadow-none rounded-sm"
                         />
                     </div>
                 </div>
