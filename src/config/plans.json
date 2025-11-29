@@ -1,0 +1,82 @@
+{
+    "plans": [
+        {
+            "id": 1,
+            "index": 1,
+            "name": "basic",
+            "period": "month",
+            "price": 9.99,
+            "discountPrice": 23.99,
+            "priceSuffix": "$",
+            "credits": 700,
+            "isHighlight": false,
+            "priceId": "pri_01j6brwswya6fm5c5nddg0xgss",
+            "sandboxPriceId": "pri_01j6bqfpmyxb39rxjrd67tfe3p",
+            "stripePriceId": "price_1QsiUoG4bVH05Xxl8wxQrxjN"
+        },
+        {
+            "id": 2,
+            "index": 2,
+            "name": "pro",
+            "period": "month",
+            "price": 24.99,
+            "discountPrice": 39.99,
+            "priceSuffix": "$",
+            "credits": 1800,
+            "isHighlight": true,
+            "priceId": "pri_01j6brx3z34nct7qha9mrgntd2",
+            "sandboxPriceId": "pri_01hteqzqs2khcptv9bqr6vcykf",
+            "stripePriceId": "price_1QsiW4G4bVH05XxlldPIZsO2"
+        },
+        {
+            "id": 3,
+            "index": 3,
+            "name": "vip",
+            "period": "month",
+            "price": 59.99,
+            "discountPrice": 99.99,
+            "priceSuffix": "$",
+            "credits": 5000,
+            "isHighlight": false,
+            "priceId": "pri_01j6brxffakb2h5d9mp1c9z7jd",
+            "stripePriceId": "price_1QsiWIG4bVH05Xxl1C8F89XP"
+        },
+        {
+            "id": 4,
+            "index": 4,
+            "name": "basic",
+            "period": "year",
+            "price": 6.99,
+            "discountPrice": 23.99,
+            "priceSuffix": "$",
+            "credits": 8400,
+            "isHighlight": false,
+            "priceId": "pri_01j6brze8qywfzjjz4njgw55ry",
+            "stripePriceId": "price_1QsjB1G4bVH05Xxlf7i3I5t5"
+        },
+        {
+            "id": 5,
+            "index": 5,
+            "name": "pro",
+            "period": "year",
+            "price": 17.99,
+            "discountPrice": 39.99,
+            "priceSuffix": "$",
+            "credits": 21600,
+            "isHighlight": true,
+            "priceId": "pri_01j6bs0a5ff6hr03etqa4xa9fh",
+            "stripePriceId": "price_1QsjBUG4bVH05Xxl9IJokE7t"
+        },
+        {
+            "id": 6,
+            "index": 6,
+            "name": "vip",
+            "period": "year",
+            "price": 0,
+            "discountPrice": 99.99,
+            "priceSuffix": "$",
+            "credits": 60000,
+            "isHighlight": false
+        }
+    ]
+}

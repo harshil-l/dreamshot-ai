@@ -47,10 +47,20 @@ export default function AccountPage() {
 
   if (!user) {
     return (
-      <div className="w-full min-h-screen flex flex-col items-center justify-center pt-20">
+      <div className="w-full min-h-screen flex flex-col items-center justify-center pt-20 bg-gradient-to-b from-white via-blue-50 to-blue-600 relative">
+        {/* Cloud background overlay */}
+        <div
+          className="absolute inset-0 opacity-30"
+          style={{
+            backgroundImage: 'url(/assets/cloud-background.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}
+        />
         <Header />
-        <div className="flex flex-col items-center gap-4 bg-white rounded-2xl p-4">
-          <h2 className="text-2xl font-bold text-black">Login to Continue</h2>
+        <div className="flex flex-col items-center gap-4 bg-white/80 backdrop-blur-xl rounded-2xl p-6 border border-blue-200/50 shadow-lg shadow-blue-100/50 relative z-10">
+          <h2 className="text-2xl font-bold text-gray-800">Login to Continue</h2>
           <Button
             onClick={() => setDialogType(["login"])}
             className="px-6 py-2 rounded-full hover:opacity-80 transition-opacity"
@@ -65,10 +75,20 @@ export default function AccountPage() {
   // Show loading state
   if (user === "loading") {
     return (
-      <div className="flex items-center justify-center h-screen">
-        <div className="animate-spin">
+      <div className="flex items-center justify-center h-screen bg-gradient-to-b from-white via-blue-50 to-blue-100 relative">
+        {/* Cloud background overlay */}
+        <div
+          className="absolute inset-0 opacity-30"
+          style={{
+            backgroundImage: 'url(/assets/cloud-background.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}
+        />
+        <div className="animate-spin relative z-10">
           <svg
-            className="h-8 w-8 text-gray-600"
+            className="h-8 w-8 text-blue-500"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -93,30 +113,40 @@ export default function AccountPage() {
   }
 
   return (
-    <div className="w-full min-h-screen flex flex-col">
-      <div className="w-full flex flex-col items-center sm:justify-center justify-start flex-1 sm:pt-8 pt-4 pb-8">
+    <div className="w-full min-h-screen flex mt-20 flex-col bg-gradient-to-b from-white via-blue-50 to-blue-300 relative">
+      {/* Cloud background overlay */}
+      <div
+        className="absolute inset-0 opacity-20"
+        style={{
+          backgroundImage: 'url(/assets/cloud-background.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      />
+      <div className="w-full flex flex-col items-center sm:justify-center justify-start flex-1 sm:pt-8 pt-4 pb-8 relative z-10">
         {showPaymentSettings ? (
           <div className="text-gray-800 max-w-2xl w-full px-4">
             <button
               onClick={() => setShowPaymentSettings(false)}
-              className="flex items-center gap-2 mb-6 cursor-pointer hover:opacity-80 transition-all duration-200"
+              className="flex items-center gap-2 mb-6 cursor-pointer hover:opacity-80 transition-all duration-200 text-gray-700 hover:text-blue-600"
             >
-              <ArrowLeft className="w-4 h-4 text-gray-600" />
-              <h1 className="text-lg font-medium text-gray-800">Manage Subscription</h1>
+              <ArrowLeft className="w-4 h-4" />
+              <h1 className="text-lg font-medium">Manage Subscription</h1>
             </button>
-            <div className="bg-white rounded-2xl p-6 border border-gray-100">
+            <div className="bg-white/80 backdrop-blur-xl rounded-2xl p-6 border border-blue-200/50 shadow-lg shadow-blue-100/50">
               <p className="text-gray-600">Subscription management coming soon...</p>
             </div>
           </div>
         ) : (
-          <div className="text-gray-800 space-y-4 max-w-2xl w-full px-4">
+          <div className="text-gray-800 space-y-6 max-w-2xl w-full px-4">
             {/* Header */}
             <button
               onClick={() => router.back()}
-              className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-all duration-200 mb-2"
+              className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-all duration-200 mb-2 text-gray-700 hover:text-blue-600 group"
             >
-              <ArrowLeft className="w-4 h-4 text-gray-600" />
-              <h1 className="text-lg font-medium text-gray-800">My Account</h1>
+              <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
+              <h1 className="text-lg sm:text-lg md:text-xl font-semibold text-gray-800">My Account</h1>
             </button>
 
             {/* Profile Section */}

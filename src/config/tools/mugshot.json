@@ -1,3 +1,4 @@
+
 {
   "id": "mugshot",
   "title": "AI Mugshot Generator",
@@ -66,8 +67,9 @@
       "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
     }
   ],
-  "faqHeading": "Frequently Asked Questions",
-  "faqs": [
+   "faqs": {
+    "heading": "FAQs About the South Park Character Effect",
+    "questions": [
     {
       "question": "What is the Mugshot effect?",
       "answer": "The Mugshot effect is an AI image effect that turns your photo into a classic police mugshot with the right background, lighting, and style."
@@ -87,8 +89,9 @@
     {
       "question": "What kind of photos work best?",
       "answer": "Clear, front-facing photos with good lighting work best—like passport-style pictures."
-    }
-  ],
+     }
+    ]
+  },
   "testimonials": {
     "heading": "What People Say about us",
     "reviews": [
@@ -137,3 +140,4 @@
     ]
   }
 }
+

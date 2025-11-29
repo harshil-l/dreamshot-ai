@@ -16,7 +16,7 @@ type FilterType = "all" | "image-effects" | "video-effects";
 
 
 export default function AllToolsClient({ tools }: AllToolsClientProps) {
-        // Filter state: "all" shows all tools, "image-effects" or "video-effects" filters by category
+    // Filter state: "all" shows all tools, "image-effects" or "video-effects" filters by category
     const [activeFilter, setActiveFilter] = useState<FilterType>("all");
 
 
@@ -62,7 +62,15 @@ export default function AllToolsClient({ tools }: AllToolsClientProps) {
     };
 
     return (
-        <div className="flex flex-col items-center gap-10 justify-center pt-20 min-h-screen">
+        <div
+            className="relative flex flex-col items-center gap-10 justify-center pt-20 min-h-screen"
+            style={{
+                backgroundImage: 'url(/assets/cloud-background.png)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+            }}
+        >
             {/* Title and Description */}
             <div className="flex flex-col text-center items-center gap-10 justify-center mt-15 px-4">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold px-4">
@@ -74,32 +82,33 @@ export default function AllToolsClient({ tools }: AllToolsClientProps) {
             </div>
 
             {/* Filters and Search */}
-            <div className="w-full max-w-7xl mx-auto">
-                <div className="flex items-center gap-4 justify-between md:flex-row flex-col">
-                    <div className="flex items-center gap-4">
+            <div className="w-full px-2 sm:px-4 max-w-7xl mx-auto">
+                <div className="flex items-center gap-2 sm:gap-4 justify-between md:flex-row flex-col">
+                    {/* Filter buttons - single line, no wrapping */}
+                    <div className="flex items-center gap-2 sm:gap-3 md:gap-4 justify-center md:justify-start w-full md:w-auto flex-nowrap overflow-x-auto">
                         <Button
                             variant={activeFilter === "all" ? "dark" : "outline"}
-                            className="py-3 px-6 h-10 rounded-sm"
+                            className="py-2.5 sm:py-3 px-3 sm:px-4 md:px-6 h-10 sm:h-11 rounded-sm text-xs sm:text-sm md:text-base whitespace-nowrap shrink-0"
                             onClick={() => handleFilterClick("all")}
                         >
                             All
                         </Button>
                         <Button
                             variant={activeFilter === "image-effects" ? "dark" : "outline"}
-                            className="py-3 px-6 h-10 rounded-sm"
+                            className="py-2.5 sm:py-3 px-3 sm:px-4 md:px-6 h-10 sm:h-11 rounded-sm text-xs sm:text-sm md:text-base whitespace-nowrap shrink-0"
                             onClick={() => handleFilterClick("image-effects")}
                         >
                             Image Tools
                         </Button>
                         <Button
                             variant={activeFilter === "video-effects" ? "dark" : "outline"}
-                            className="py-3 px-6 h-10 rounded-sm"
+                            className="py-2.5 sm:py-3 px-3 sm:px-4 md:px-6 h-10 sm:h-11 rounded-sm text-xs sm:text-sm md:text-base whitespace-nowrap shrink-0"
                             onClick={() => handleFilterClick("video-effects")}
                         >
                             Video Tools
                         </Button>
                     </div>
-                    <div className="relative w-full max-w-md">
+                    <div className="relative w-full md:flex-1 md:max-w-xl mt-2 md:mt-0">
                         <span className="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none">
                             <Search className="w-4 h-4" />
                         </span>
@@ -108,14 +117,14 @@ export default function AllToolsClient({ tools }: AllToolsClientProps) {
                             placeholder="Search"
                             value={searchQuery}
                             onChange={handleSearchChange}
-                            className="w-full h-10 pl-10 max-w-xl text-black shadow-none rounded-sm"
+                            className="w-full h-10 pl-10 text-black shadow-none rounded-sm"
                         />
                     </div>
                 </div>
             </div>
 
             {/* Tools Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 w-full max-w-7xl px-4">
+            <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 w-full max-w-7xl px-4">
                 {filteredTools.map((tool, index) => {
                     // Generate URL using category and id for navigation
                     const toolUrl = `/${tool.category}/${tool.id}`;

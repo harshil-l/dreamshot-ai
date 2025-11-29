@@ -47,26 +47,27 @@ export function SubscriptionSection({ onManageSubscription }: SubscriptionSectio
             {!user?.subscription || user?.subscription?.isCancelled ? (
                 <button
                     onClick={() => router.push("/price")}
-                    className="relative w-full rounded-2xl overflow-hidden cursor-pointer group"
+                    className="relative w-full rounded-2xl overflow-hidden cursor-pointer group shadow-lg shadow-blue-100/50 hover:shadow-xl hover:shadow-blue-200/50 transition-all duration-300"
                 >
                     <div className="aspect-video w-full rounded-2xl overflow-hidden">
                         <img
                             src="/assets/home/ourTools/1.png"
                             alt="Upgrade Banner"
-                            className="w-full h-full rounded-2xl object-cover"
+                            className="w-full h-full rounded-2xl object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                     </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent rounded-2xl" />
                     <div className="absolute bottom-3 left-0 right-0 px-3">
                         <div className="flex items-end justify-between">
-                            <h3 className="text-black md:block hidden font-medium bg-white/20 backdrop-blur-2xl py-1.5 px-4 border border-white/5 rounded-xl">
+                            <h3 className="text-white md:block hidden font-semibold bg-white/20 backdrop-blur-2xl py-2 px-4 border border-white/30 rounded-xl shadow-md">
                                 {user?.subscription?.isCancelled
                                     ? getIsCancelledAfterTag()
                                     : getSubscriptionName()}
                             </h3>
-                            <h3 className="text-black md:hidden block font-medium bg-white/20 backdrop-blur-2xl py-1.5 px-4 border border-white/5 rounded-xl">
+                            <h3 className="text-white md:hidden block font-semibold bg-white/20 backdrop-blur-2xl py-2 px-4 border border-white/30 rounded-xl shadow-md">
                                 Upgrade
                             </h3>
-                            <div className="text-black font-medium bg-white/20 backdrop-blur-2xl py-1.5 px-1.5 border border-white/5 rounded-xl hover:bg-white/30 transition-all duration-300">
+                            <div className="text-white font-medium bg-white/20 backdrop-blur-2xl py-2 px-2 border border-white/30 rounded-xl hover:bg-white/30 transition-all duration-300 shadow-md">
                                 <CrossArrowIcon className="w-6 h-6 transition-transform duration-300 group-hover:rotate-45" />
                             </div>
                         </div>
@@ -75,20 +76,20 @@ export function SubscriptionSection({ onManageSubscription }: SubscriptionSectio
             ) : null}
 
             {/* Plan Section */}
-            <div className="bg-white rounded-2xl py-4 px-4 border border-gray-100">
+            <div className="bg-white/80 backdrop-blur-xl rounded-2xl py-5 px-5 border border-blue-200/50 shadow-lg shadow-blue-100/50 hover:shadow-xl hover:shadow-blue-200/50 transition-all duration-300">
                 <div
                     className={twMerge(
                         "flex items-center justify-between",
                         user?.subscription && !user?.subscription?.isCancelled
-                            ? "border-b border-gray-200 pb-4"
+                            ? "border-b border-blue-200/50 pb-4"
                             : ""
                     )}
                 >
                     <div className="flex-1">
-                        <h3 className="text-gray-800 text-sm font-medium">
+                        <h3 className="text-gray-800 text-sm font-semibold">
                             {user?.subscription ? getSubscriptionName() : "Free Plan"}
                         </h3>
-                        <p className="md:text-sm text-xs text-gray-500 mt-1">
+                        <p className="md:text-sm text-xs  text-gray-500 mt-1 font-medium">
                             {user?.subscription
                                 ? `${getDateTitle(user?.subscription?.isCancelled || false)} ${new Date(
                                     Number(user.subscription.renewsAt) * 1000
@@ -114,7 +115,7 @@ export function SubscriptionSection({ onManageSubscription }: SubscriptionSectio
                 {user?.subscription && !user?.subscription?.isCancelled && (
                     <div className="flex items-center justify-between pt-4">
                         <div className="flex-1">
-                            <h3 className="text-gray-800 text-sm font-medium">
+                            <h3 className="text-gray-800 text-sm font-semibold">
                                 Thanks for subscribing to Dreamshot{" "}
                                 {Number(user?.subscription?.planId) === 1 ||
                                     Number(user?.subscription?.planId) === 4
@@ -124,13 +125,13 @@ export function SubscriptionSection({ onManageSubscription }: SubscriptionSectio
                                         ? "Standard"
                                         : "Premium"}!
                             </h3>
-                            <p className="md:text-sm text-xs text-gray-500 mt-1">
+                            <p className="md:text-sm text-xs  text-gray-500 mt-1 font-medium">
                                 Explore your new Pro features.{" "}
                                 <button
                                     onClick={() => {
                                         router.push("/price");
                                     }}
-                                    className="text-gray-800 text-sm cursor-pointer underline hover:text-gray-600 transition-colors duration-200"
+                                    className="text-blue-700 underline hover:text-blue-900 text-xs sm:text-sm font-semibold bg-transparent border-0 px-0 py-0 cursor-pointer"
                                 >
                                     Learn more
                                 </button>
@@ -141,7 +142,7 @@ export function SubscriptionSection({ onManageSubscription }: SubscriptionSectio
                                 onClick={onManageSubscription}
                                 className="flex items-center cursor-pointer transition-all duration-100"
                             >
-                                <span className="text-gray-800 text-nowrap sm:text-sm text-xs cursor-pointer underline hover:text-gray-600 transition-colors duration-200">
+                                <span className="text-blue-600 text-nowrap sm:text-sm text-xs cursor-pointer border border-blue-600 hover:border-blue-700 hover:text-blue-700 transition-colors duration-200 font-semibold bg-blue-200/30 hover:bg-blue-200/50 px-3 py-1.5 rounded-md">
                                     Manage
                                 </span>
                             </button>
