@@ -6,12 +6,12 @@ const FOOTER_BACKGROUND_COLOR = "var(--footer-primary)"; // Centralized to keep 
 export default function Footer() {
     return (
         <footer
-            className="w-full p-6 sm:p-8 md:p-12 mt-20 "
+            className="w-full p-6 sm:p-8 md:p-12 "
             style={{ backgroundColor: FOOTER_BACKGROUND_COLOR }}
         >
             <div className="flex md:justify-between flex-col md:flex-row gap-10 w-full max-w-7xl mx-auto">
                 {/* Left Section */}
-                <div className="flex flex-col w-full flex-1 min-h-0 max-h-full justify-between pt-4 pr-4 pl-4">
+                <div className="flex flex-col w-full flex-1 min-h-0 max-h-full justify-start pt-4 pr-4 pl-4">
                     {/* Top Center: Logo */}
                     <div className="flex flex-col">
                         <Link href="/" className="text-xl font-bold">
@@ -19,7 +19,7 @@ export default function Footer() {
                         </Link>
                     </div>
                     {/* Center: h2 */}
-                    <div className="flex flex-col justify-center mt-10 md:mt-2 mb-2 flex-1">
+                    <div className="flex flex-col mt-4 mb-2 flex-1">
                         <h2 className="text-gray-400 text-start text-base md:text-lg">
                             Access AI-powered tools in one place for
                             enhanced productivity, creativity, and efficiency—
@@ -72,7 +72,7 @@ export default function Footer() {
                             <h3 className="text-gray-400 text-sm md:text-base">Contact Us</h3>
                         </div>
 
-                        <div className="sm:mt-10">
+                        <div className="">
                             <h1 className="text-white text-lg md:text-xl mb-4 font-bold">Legal</h1>
                             <h3 className="text-gray-400 text-sm md:text-base">Privacy Policy</h3>
                             <h3 className="text-gray-400 text-sm md:text-base">Terms & Conditions</h3>

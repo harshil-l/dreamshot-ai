@@ -9,7 +9,7 @@ export default function ContactUsPoster() {
             backgroundRepeat: 'no-repeat',
         }}>
             {/* Title and Description */}
-            <div className="flex flex-col text-center items-center gap-10 justify-center pt-15 px-4">
+            <div className="flex flex-col text-center items-center gap-3 justify-center pt-15 px-4">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold px-4">
                     We’d Love to Hear From You
                 </h1>
@@ -17,7 +17,7 @@ export default function ContactUsPoster() {
                     directly at <span className="text-primary font-bold">contact@maxstudio.ai </span></p>
             </div>
 
-            <div className="flex flex-col pb-15 md:flex-row lg:flex-row items-center gap-10 justify-center w-full max-w-6xl mx-auto px-4 mt-10">
+            <div className="flex flex-col pb-15 md:flex-row lg:flex-row items-center gap-5 justify-center w-full max-w-6xl mx-auto px-4 mt-10">
                 <ContactUsForm />
                 <img 
                         src="/assets/ContactUs/Background.png" 

@@ -81,7 +81,7 @@ export default function PricingPlan({ initialPlans }: PricingPlanProps = {}) {
         }}>
 
             {/* Title and Description */}
-            <div className="flex flex-col text-center items-center gap-10 justify-center mt-15 px-4">
+            <div className="flex flex-col text-center items-center gap-3 justify-center mt-4 md:mt-16 px-4">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold px-4">
                     Pricing
                 </h1>

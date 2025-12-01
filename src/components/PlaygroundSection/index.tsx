@@ -295,9 +295,14 @@ export default function PlaygroundSection() {
     };
 
     return (
-        <div className="flex flex-col gap-5">
+        <div className="w-full flex flex-col gap-5" style={{
+            backgroundImage: 'url(/assets/cloud-bg-2.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+        }}>
             {/* Title and Description */}
-            <div className="flex flex-col text-center items-center gap-5 justify-center mt-15 px-4">
+            <div className="w-full flex flex-col text-center items-center gap-5 justify-center mt-15 px-4">
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold px-4">
                     {title}
                 </h1>
@@ -305,7 +310,7 @@ export default function PlaygroundSection() {
             </div>
 
             {/* Playground Card */}
-            <div className="w-full  max-w-lg lg:max-w-3xl mx-auto flex flex-col gap-10">
+            <div className="w-full max-w-lg rounded-xl bg-white lg:max-w-3xl mx-auto flex flex-col gap-10">
                 {isDualUpload ? (
                     <DualUploadContainer
                         inputId1="file-upload-1"
@@ -377,10 +382,12 @@ export default function PlaygroundSection() {
             </div>
 
             {/* Sample Images */}
-            <SampleImages
-                samples={sampleImages}
-                onSampleClick={handleSampleClick}
-            />
+            <div className="w-full max-w-lg lg:max-w-3xl mx-auto">
+                <SampleImages
+                    samples={sampleImages}
+                    onSampleClick={handleSampleClick}
+                />
+            </div>
 
         </div>
     );

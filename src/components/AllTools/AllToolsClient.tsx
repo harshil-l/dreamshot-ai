@@ -16,25 +16,21 @@ type FilterType = "all" | "image-effects" | "video-effects";
 
 
 export default function AllToolsClient({ tools }: AllToolsClientProps) {
-    // Filter state: "all" shows all tools, "image-effects" or "video-effects" filters by category
     const [activeFilter, setActiveFilter] = useState<FilterType>("all");
 
 
     const [searchQuery, setSearchQuery] = useState("");
 
-    // Convert ToolConfigJson to DashboardPopularTool format for display
     const toolsForDisplay = useMemo(() => {
         return tools.map((tool) => ({
             title: tool.title,
             imageUrl: tool.cardImage || tool.transformationImages.transformationPreview || "",
-            // Include category and id for navigation
             category: tool.postPrefix || tool.toolCategory,
             id: tool.id,
             toolCategory: tool.toolCategory,
         }));
     }, [tools]);
 
-    // Filter tools based on active filter and search query
     const filteredTools = useMemo(() => {
         let filtered = toolsForDisplay;
 
@@ -63,7 +59,7 @@ export default function AllToolsClient({ tools }: AllToolsClientProps) {
 
     return (
         <div
-            className="relative flex flex-col items-center gap-10 justify-center pt-20 min-h-screen"
+            className="relative flex flex-col items-center gap-10 justify-center py-20 min-h-screen"
             style={{
                 backgroundImage: 'url(/assets/cloud-background.png)',
                 backgroundSize: 'cover',
@@ -108,7 +104,7 @@ export default function AllToolsClient({ tools }: AllToolsClientProps) {
                             Video Tools
                         </Button>
                     </div>
-                    <div className="relative w-full md:flex-1 md:max-w-xl mt-2 md:mt-0">
+                    <div className="relative w-full md:flex-1 bg-white md:max-w-md mt-2 md:mt-0">
                         <span className="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none">
                             <Search className="w-4 h-4" />
                         </span>
@@ -117,7 +113,7 @@ export default function AllToolsClient({ tools }: AllToolsClientProps) {
                             placeholder="Search"
                             value={searchQuery}
                             onChange={handleSearchChange}
-                            className="w-full h-10 pl-10 text-black shadow-none rounded-sm"
+                            className="w-full h-10 pl-10 text-black font-semibold shadow-none rounded-sm"
                         />
                     </div>
                 </div>

@@ -38,7 +38,7 @@ export function SettingsSection({ onClearData, onDeleteAccount }: SettingsSectio
                         Receive offers, tips, and news straight to your inbox.
                     </p>
                 </div>
-                <Switch checked={emailUpdates} onCheckedChange={setEmailUpdates} />
+                <Switch checked={emailUpdates} onCheckedChange={setEmailUpdates} className="cursor-pointer" />
             </div>
 
             <div className="border-t border-blue-200/50">

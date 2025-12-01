@@ -8,9 +8,9 @@ interface OurFeatureCardProps {
 
 export default function OurFeatureCard({ feature, index }: OurFeatureCardProps) {
     return (
-        <div className={twMerge("flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 w-full h-full", index % 2 === 0 ? "md:flex-row-reverse" : "")}>
+        <div className={twMerge("flex flex-col md:flex-row items-center justify-between gap-6 md:gap-18 w-full h-full", index % 2 === 0 ? "md:flex-row-reverse" : "")}>
             {/* Left side - Title and Description */}
-            <div className="flex-1 flex flex-col gap-3 md:gap-4 w-full md:w-auto">
+            <div className="flex-1 flex flex-col w-full md:w-auto">
                 <h2 className="text-2xl md:text-3xl font-semibold text-left">
                     {feature.title}
                 </h2>

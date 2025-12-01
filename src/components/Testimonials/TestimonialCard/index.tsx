@@ -8,7 +8,7 @@ interface TestimonialCardProps {
 
 export default function TestimonialCard({ review, name, designation }: TestimonialCardProps) {
     return (
-        <div className="w-full max-w-md bg-gray-50 rounded-2xl p-6 border border-gray-200 shadow-md">
+        <div className="w-full max-w-md bg-gray-50 rounded-2xl p-6 border border-gray-200 ">
             {/* Top section: avatar + name + role */}
             <div className="flex items-center gap-4">
                 <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-200 text-gray-700 font-bold text-lg">

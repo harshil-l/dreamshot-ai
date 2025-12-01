@@ -142,7 +142,7 @@ export function DualUploadContainer({
                             {/* Image Preview Container - Takes available space but leaves room for text */}
                             <div className="flex-shrink overflow-hidden" style={{ height: 'calc(100% - 100px)' }}>
                                 <div className="w-full h-full flex items-center justify-center">
-                                    <ImagePreview previewUrl={previewUrl1} />
+                                <ImagePreview previewUrl={previewUrl1} />
                                 </div>
                             </div>
                             {/* Upload Text - Fixed space at bottom */}
@@ -199,7 +199,7 @@ export function DualUploadContainer({
                             {/* Image Preview Container - Takes available space but leaves room for text */}
                             <div className="flex-shrink overflow-hidden" style={{ height: 'calc(100% - 100px)' }}>
                                 <div className="w-full h-full flex items-center justify-center">
-                                    <ImagePreview previewUrl={previewUrl2 || previewUrl1} />
+                                <ImagePreview previewUrl={previewUrl2 || previewUrl1} />
                                 </div>
                             </div>
                             {/* Upload Text - Fixed space at bottom */}

@@ -91,7 +91,7 @@ export function UploadContainer({
 
     return (
         <div
-            className={`mx-2 my-2 md:mx-4 md:my-4 rounded-md flex flex-col bg-gray-50/50 h-[400px] md:h-[460px] lg:h-[500px] relative ${shouldShowBorder ? 'border-3 border-dashed border-gray-300' : ''
+            className={`mx-2 my-2 md:mx-4 md:my-4 rounded-md flex flex-col  h-[400px] md:h-[460px] lg:h-[500px] relative ${shouldShowBorder ? 'border-2 border-dashed border-gray-300' : ''
                 } ${isClickable ? 'cursor-pointer transition-colors' : ''}`}
             onClick={handleContainerClick}
         >
@@ -151,8 +151,8 @@ export function UploadContainer({
                 // Show default preview with text below
                 <div className="flex flex-col h-full p-3 md:p-4">
                     {/* Image Preview Container - Takes available space but leaves room for text */}
-                    <div className="flex-shrink overflow-hidden" style={{ height: 'calc(100% - 100px)' }}>
-                        <div className="w-full h-full flex items-center justify-center">
+                    <div className="flex-shrink overflow-hidden">
+                        <div className=" items-center justify-center">
                             <ImagePreview
                                 previewUrl={previewUrl}
                                 resultUrl={resultUrl}

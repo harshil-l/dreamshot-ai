@@ -16,19 +16,53 @@ export function downloadFile(
     console.log(`[DOWNLOAD] 📥 Downloading file:`, { url, filename: defaultFilename, fileType });
 
     try {
-        // Create a temporary anchor element to trigger download
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = defaultFilename;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer"; // Security best practice
-        
-        // Append to body, click, then remove
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-
-        customToast.success("Download started!");
+        // For cross-origin URLs, fetch the file and create a blob URL
+        // This ensures direct download without opening a new tab
+        if (url.startsWith('http://') || url.startsWith('https://')) {
+            fetch(url)
+                .then(response => response.blob())
+                .then(blob => {
+                    const blobUrl = window.URL.createObjectURL(blob);
+                    const link = document.createElement("a");
+                    link.href = blobUrl;
+                    link.download = defaultFilename;
+                    link.rel = "noopener noreferrer";
+                    
+                    // Append to body, click, then remove
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    
+                    // Clean up the blob URL
+                    window.URL.revokeObjectURL(blobUrl);
+                    
+                    customToast.success("Download started!");
+                })
+                .catch(error => {
+                    console.error(`[DOWNLOAD] ❌ Fetch failed, trying direct download:`, error);
+                    // Fallback to direct download if fetch fails
+                    const link = document.createElement("a");
+                    link.href = url;
+                    link.download = defaultFilename;
+                    link.rel = "noopener noreferrer";
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    customToast.success("Download started!");
+                });
+        } else {
+            // For same-origin URLs, use direct download
+            const link = document.createElement("a");
+            link.href = url;
+            link.download = defaultFilename;
+            link.rel = "noopener noreferrer";
+            
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            customToast.success("Download started!");
+        }
     } catch (error) {
         console.error(`[DOWNLOAD] ❌ Download failed:`, error);
         customToast.error("Failed to download file");

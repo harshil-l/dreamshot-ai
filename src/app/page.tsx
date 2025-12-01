@@ -35,6 +35,7 @@ export default function Home() {
       {/* Curved Carousel */}
       <CurvedCarousel />
 
+
       {/* Footer */}
       <Footer />
     </div>

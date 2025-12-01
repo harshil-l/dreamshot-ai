@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState, useRef, useCallback } from "react";
 import { CURVED_CAROUSEL_IMAGES } from "@/constants/static.content.constants";
 import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";
 
 
 // Responsive breakpoints matching Tailwind defaults
@@ -21,6 +22,11 @@ const ARC_RADIUS_MULTIPLIER = 10; // scale radius relative to card width
 const EXTRA_HEIGHT_OFFSET = 70; // ensures wrapper has room for arc
 
 export default function CurvedCarousel() {
+    const router = useRouter();
+
+    const handleNavigateToAllTools = () => {
+      router.push('/all-tools');
+    };
     const containerRef = useRef<HTMLDivElement>(null);
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
@@ -187,7 +193,13 @@ export default function CurvedCarousel() {
     return (
         <div
             ref={containerRef}
-            className="flex flex-col items-center gap-10 justify-center px-4 sm:px-6 md:px-8 w-full"
+            className="flex flex-col items-center gap-3 justify-center py-10 px-4 sm:px-6 md:px-8 w-full" 
+            style={{
+                backgroundImage: 'url(/assets/cloud-bg-2.png)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+            }}
         >
             <div className="curved-carousel w-full flex justify-center items-center py-10 sm:py-16 md:py-20 overflow-x-hidden">
                 <div
@@ -258,7 +270,7 @@ export default function CurvedCarousel() {
                 efficiently.
             </p>
 
-            <Button variant='dark' className='py-4 h-12' onClick={() => window.location.href = '/all-tools'}>Explore Tools</Button>
+            <Button variant='dark' className='py-4 h-12' onClick={handleNavigateToAllTools}>Explore Tools</Button>
         </div>
     );
 }

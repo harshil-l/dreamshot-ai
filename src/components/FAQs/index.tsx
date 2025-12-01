@@ -4,10 +4,12 @@ import TextSeparator from "../TextSeparator";
 import { SingleFaq } from "./FAQsCard";
 import { useToolConfig } from "@/hooks/useToolConfig";
 import { STATIC_FAQS } from "@/constants/static.content.constants";
+import { Accordion } from "@/components/ui/accordion";
 
 /**
  * FAQs component that displays FAQ questions and answers
  * Uses tool config from context if on dynamic tool page, otherwise uses static constants
+ * Implements accordion behavior where only one question can be open at a time
  */
 export default function FAQs() {
     const toolConfig = useToolConfig();
@@ -24,21 +26,24 @@ export default function FAQs() {
     };
 
     return (
-        <div className="flex flex-col items-center gap-10 justify-center px-4 w-full">
+        <div className="flex flex-col mt-4 md:mt-16 items-center gap-3 justify-center px-4 w-full">
             <TextSeparator textSeparatorText="FAQs" />
 
             <h1 className="text-2xl md:text-3xl lg:text-4xl text-center font-bold px-4">
                 {faqs.heading}
             </h1>
 
-            <div className="w-full max-w-3xl px-4 overflow-hidden">
+            <div className="w-full max-w-3xl mt-4 md:mt-12 px-4 overflow-hidden">
+                <Accordion type="single" collapsible className="w-full">
                 {faqs.questions.map((faq, index) => (
                     <SingleFaq
                         key={index}
                         answer={faq.answer}
                         question={faq.question}
+                            value={`item-${index}`}
                     />
                 ))}
+                </Accordion>
             </div>
         </div>
     );

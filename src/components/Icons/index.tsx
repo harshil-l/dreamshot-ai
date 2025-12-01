@@ -677,3 +677,14 @@ export const CardIcon = ({ className }: { className?: string }) => (
         />
     </svg>
 );
+
+export const SliderIcon = ({ className }: { className?: string }) => (
+    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="22.1011" cy="22.1011" r="22.1011" transform="matrix(-1 0 0 1 44.2021 0)" fill="white" />
+        <path d="M17.5283 17.5283L12.9557 22.101L17.5283 26.6736" stroke="black" strokeWidth="1.52421" />
+        <path d="M26.6738 17.5283L31.2465 22.101L26.6738 26.6736" stroke="black" strokeWidth="1.52421" />
+        <path opacity="0.05" d="M22.1011 12.5747L22.1011 31.6273" stroke="black" strokeWidth="1.52421" />
+    </svg>
+
+
+)

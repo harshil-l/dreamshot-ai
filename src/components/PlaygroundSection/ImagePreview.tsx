@@ -19,8 +19,8 @@ export function ImagePreview({ previewUrl, resultUrl, showArrow = false }: Image
     if (resultUrl && showArrow) {
         // Show both images with arrow (side by side transformation) - fixed height
         return (
-            <div className="flex items-center justify-center w-full">
-                <div className="relative flex items-center justify-center w-full h-[320px] md:h-[380px] lg:h-[420px]">
+            <div className="flex items-center justify-center w-full h-[320px] md:h-[380px] lg:h-[420px]">
+                <div className="relative flex items-center justify-center w-full">
                     <div className="flex items-center justify-center gap-0 relative">
                         <div className="z-10 rounded-xl overflow-hidden relative h-full w-[120px] sm:w-[150px] md:w-[180px] lg:w-[200px]">
                             <Image

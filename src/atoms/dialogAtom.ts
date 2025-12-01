@@ -31,5 +31,6 @@ export type DialogType =
     | 'chromaStudio'
     | 'manageFaces'
     | 'inspirationDialog'
+    | 'historyView'
 
 export const dialogAtom = atom<DialogType[]>([]);

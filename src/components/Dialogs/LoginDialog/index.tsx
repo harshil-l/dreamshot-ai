@@ -3,7 +3,7 @@
 import { dialogAtom } from "@/atoms/dialogAtom";
 import useAuth from "@/hooks/useAuth";
 import { useAtom } from "jotai";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { DialogBase } from "@/components/DialogBase";
 import TextInputWithLabel from "@/components/TextInputWithLabel";
 import ContinueWithGoogle from "@/components/DividerWithOr/ContinueWithGoogle";
@@ -12,6 +12,8 @@ import { Loader2 } from "lucide-react";
 import { useHandleDialogType } from "@/hooks/useHandleDialogType";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import BeforeAfterImage from "@/components/BeforeAfterImage";
+import { SliderIcon } from "@/components/Icons";
 
 // Separate form component that manages its own state
 // Using a key prop on this component will reset its state when the key changes
@@ -102,13 +104,50 @@ const LoginInDialog = () => {
   // * hooks
   const { loginWithGoogle, login } = useAuth();
 
+  // Image pairs for carousel
+  const imagePairs = [
+    { blur: "/assets/AuthDialog/1-blur.png", clear: "/assets/AuthDialog/1-clear.png" },
+    { blur: "/assets/AuthDialog/2-blur.png", clear: "/assets/AuthDialog/2-clear.png" },
+    { blur: "/assets/AuthDialog/3-blur.png", clear: "/assets/AuthDialog/3-clear.png" },
+  ];
+
+  // Carousel state - initialize based on dialog state
+  const isLoginOpen = dialog.includes("login");
+  const [currentPairIndex, setCurrentPairIndex] = useState(() => 0);
+  const prevDialogStateRef = useRef(isLoginOpen);
+
   // Generate a key that changes when login dialog opens to reset form state
   // This is the React-recommended way to reset component state
   // The key changes only when "login" appears in the dialog array, causing the form to remount with fresh state
   const formKey = useMemo(() => {
-    const isLoginOpen = dialog.includes("login");
     return isLoginOpen ? `login-form-${dialog.join("-")}` : "login-form-closed";
-  }, [dialog]);
+  }, [dialog, isLoginOpen]);
+
+  // Carousel effect: cycle through image pairs every 5 seconds
+  useEffect(() => {
+    const wasLoginOpen = prevDialogStateRef.current;
+
+    // Reset carousel to first pair when dialog opens (transition from closed to open)
+    // Using setTimeout to defer state update and avoid linter warning
+    if (isLoginOpen && !wasLoginOpen) {
+      setTimeout(() => setCurrentPairIndex(0), 0);
+    }
+
+    // Update ref for next render
+    prevDialogStateRef.current = isLoginOpen;
+
+    if (isLoginOpen) {
+      // Set up interval to cycle through pairs every 5 seconds
+      const interval = setInterval(() => {
+        setCurrentPairIndex((prevIndex) => (prevIndex + 1) % imagePairs.length);
+      }, 5000);
+
+      // Cleanup interval when dialog closes or component unmounts
+      return () => {
+        clearInterval(interval);
+      };
+    }
+  }, [isLoginOpen, imagePairs.length]);
 
   return (
     <DialogBase
@@ -122,17 +161,51 @@ const LoginInDialog = () => {
     >
       <div className="rounded-xl sm:rounded-3xl border w-full h-full overflow-hidden">
         <div className="flex flex-col md:flex-row justify-center items-stretch w-full h-full min-h-0">
-          {/* Image Section - 50% width on desktop, hidden on mobile */}
-          <div className="hidden md:flex h-auto md:h-full w-full md:w-1/2 items-center justify-center shrink-0 relative">
-            <div className="relative w-full h-full p-4 md:p-6 lg:p-8 rounded-xl sm:rounded-3xl overflow-hidden">
-              <Image
-                src="/assets/dialog_photo.png"
-                alt="Login"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 0vw, 50vw"
-                priority
+          {/* Before/After Image Section - 50% width on desktop, hidden on mobile */}
+          <div className="hidden md:flex h-auto md:h-full w-full md:w-1/2 items-center justify-center shrink-0 relative p-4 md:p-6 lg:p-8">
+            <div className="relative w-full h-full rounded-xl sm:rounded-3xl overflow-hidden">
+              <BeforeAfterImage
+                key={currentPairIndex}
+                beforeImage={
+                  <Image
+                    src={imagePairs[currentPairIndex].blur}
+                    alt={`Before - Blurred ${currentPairIndex + 1}`}
+                    fill
+                    className="object-cover transition-opacity duration-500"
+                    sizes="(max-width: 768px) 0vw, 50vw"
+                    priority={currentPairIndex === 0}
+                  />
+                }
+                afterImage={
+                  <Image
+                    src={imagePairs[currentPairIndex].clear}
+                    alt={`After - Clear ${currentPairIndex + 1}`}
+                    fill
+                    className="object-cover transition-opacity duration-500"
+                    sizes="(max-width: 768px) 0vw, 50vw"
+                    priority={currentPairIndex === 0}
+                  />
+                }
+                SliderIcon={<SliderIcon className="w-10 h-10" />}
+                containerStyle="w-full h-full rounded-xl sm:rounded-3xl"
+                SliderWrapperStyle="w-10 h-10"
+                SliderLineStyle=""
               />
+              {/* Carousel Indicators */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10">
+                {imagePairs.map((_, index) => (
+                  <button
+                    key={index}
+                    type="button"
+                    onClick={() => setCurrentPairIndex(index)}
+                    className={`transition-all duration-300 rounded-full ${currentPairIndex === index
+                      ? "w-2.5 h-2.5 bg-white shadow-lg"
+                      : "w-2 h-2 bg-white/60 hover:bg-white/80"
+                      }`}
+                    aria-label={`Go to image pair ${index + 1}`}
+                  />
+                ))}
+              </div>
             </div>
           </div>
           {/* Login Form Section - Full width on mobile, 50% on desktop */}

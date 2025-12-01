@@ -83,7 +83,7 @@ const UserAccount = () => {
                             </PopoverTrigger>
                             <PopoverContent
                                 align="center"
-                                className="backdrop-blur-2xl rounded-4xl mt-4 backdrop-filter bg-sBackground border-2 border-white/10  pt-6 pb-3 px-0 w-72 user-account-popover-shadow"
+                                className="backdrop-blur-2xl rounded-2xl mt-4 backdrop-filter bg-sBackground border-2 border-white/10  pt-6 pb-3 px-0 w-72 user-account-popover-shadow"
                             >
                                 {/* User Info */}
                                 <div className="flex items-center gap-3 mb-6 px-6">
@@ -219,7 +219,7 @@ const UserAccount = () => {
                                     <Button
                                         className="flex  items-center justify-start gap-2 cursor-pointer hover:opacity-80 py-2 bg-transparent border-none hover:bg-black/10 outline-none w-full text-foreground"
                                         onClick={() => {
-                                            router.push("/my-creations");
+                                            router.push("/history");
                                             setOpenPopover(false);
                                         }}
                                     >
