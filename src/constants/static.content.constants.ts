@@ -121,12 +121,12 @@ export const STATIC_EXAMPLES = {
 };
 
 export const STATIC_FEATURES: string[] = [
-    "Easy-to-use interface",
-    "High-resolution image processing",
-    "Secure & private uploads",
-    "AI-powered effects and filters",
-    "Fast image transformation",
-    "Download & share options"
+    "Access to all styles & tools",
+    "Private generation",
+    "Storage for 60 days",
+    "No watermark",
+    "No ads",
+    "Download & Delete options"
 ];
 
 // Home/Dashboard page constants

@@ -33,16 +33,18 @@ export default function PricingCard({ plan, allPlans = [] }: { plan: Plan; allPl
             </div>
 
             {/* Section 2: Price */}
-            <div className="flex items-end gap-2 flex-wrap">
-                {/* Show monthly price amount only (without / monthly) with strikethrough for annual plans */}
+            <div className="flex flex-col gap-1">
+                {/* First line: Strikethrough monthly price (only for annual plans) */}
                 {monthlyPlan && (
-                    <span className="text-base md:text-lg lg:text-xl font-semibold text-red-500 line-through">
+                    <div className="text-base md:text-lg lg:text-xl font-semibold text-red-500 line-through">
                         ${monthlyPlan.price}
-                    </span>
+                    </div>
                 )}
-                {/* Annual price amount only (without duration) for annual plans, or monthly price for monthly plans */}
-                <div className="text-3xl md:text-4xl lg:text-5xl font-semibold">${plan.price}</div>
-                <div className="text-gray-500 text-xs md:text-sm translate-y-2">/ monthly</div>
+                {/* Second line: Annual price with / monthly text */}
+                <div className="flex items-baseline gap-1 flex-nowrap">
+                    <span className="text-3xl md:text-4xl lg:text-5xl font-semibold whitespace-nowrap">${plan.price}</span>
+                    <span className="text-gray-500 text-xs md:text-sm whitespace-nowrap">/ monthly</span>
+                </div>
             </div>
 
             {/* Section 3: Checkout Button */}
