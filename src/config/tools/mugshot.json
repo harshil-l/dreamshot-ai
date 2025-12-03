@@ -1,4 +1,3 @@
-
 {
   "id": "mugshot",
   "title": "AI Mugshot Generator",
@@ -20,7 +19,7 @@
   "inputType": "single",
   "effectId": "mugshot",
   "model": "image-effects",
-  "cardImage": "https://assets.remixai.io/mugshot-cover-image.webp",
+  "cardImage": "https://assets.remixai.io/Public/samples/Red-Hulk-featured.webp",
   "cardVideo": null,
   "transformationImages": {
     "transformationPreview": "https://assets.remixai.io/Public/samples/Red-Hulk.webp"
@@ -28,10 +27,10 @@
   "dualUploadLabels": {},
   "recommendedEffects": {
     "id": [
-      "ai-lookism-filter",
-      "ai-sad-filter",
-      "ai-smile-filter",
-      "elevator-photo-generator"
+      "ai-winter-effect",
+      "change-image-to-fall-season",
+      "silhouette-filter",
+      "add-santa-to-photo"
     ],
     "heading": "Try More Popular Image Effects"
   },
@@ -68,7 +67,7 @@
     }
   ],
    "faqs": {
-    "heading": "FAQs About the South Park Character Effect",
+    "heading": "FAQs About Mugshot Effect",
     "questions": [
     {
       "question": "What is the Mugshot effect?",
@@ -96,7 +95,7 @@
     "heading": "What People Say about us",
     "reviews": [
       {
-        "review": "I'm genuinely impressed with the quality. The integration with Dreamshot is just the cherry on top for my projects.",
+        "review": "I'm genuinely impressed with the quality. The integration with Max Studio is just the cherry on top for my projects.",
         "name": "Oliver",
         "designation": "Visual Content Creator"
       },

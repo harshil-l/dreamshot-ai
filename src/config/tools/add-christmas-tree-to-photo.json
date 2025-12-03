@@ -19,7 +19,7 @@
   "inputType": "single",
   "effectId": "addChristmasTreeToPhoto",
   "model": "image-effects",
-  "cardImage": "https://assets.remixai.io/add-christmas-tree-to-phoo-cover-image.webp",
+  "cardImage": "https://assets.remixai.io/Public/samples/Red-Hulk-featured.webp",
   "cardVideo": null,
   "transformationImages": {
     "transformationPreview": "https://assets.remixai.io/Public/samples/Red-Hulk.webp"
@@ -27,9 +27,9 @@
   "dualUploadLabels": {},
   "recommendedEffects": {
     "id": [
-      "elevator-photo-generator",
+      "ai-winter-effect",
       "mugshot",
-      "pixel-art-upscaler",
+      "add-santa-to-photo",
       "selfie-with-celebrities"
     ],
     "heading": "See Other Cool Image Effects"
@@ -100,7 +100,7 @@
         "designation": "iOS user from USA"
       },
       {
-        "review": "I needed a quick way to add a festive touch for social media posts, and this was perfect. Great job, Dreamshot!",
+        "review": "I needed a quick way to add a festive touch for social media posts, and this was perfect. Great job, Max Studio!",
         "name": "Ethan",
         "designation": "Content Creator"
       },
@@ -139,3 +139,4 @@
     ]
   }
 }
+

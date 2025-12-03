@@ -27,10 +27,10 @@
   "dualUploadLabels": {},
   "recommendedEffects": {
     "id": [
-      "add-birthday-hat-to-photo",
-      "add-flower-crown-to-photo",
+      "disney-pixar-filter",
+      "add-santa-to-photo",
       "add-crown-to-photo",
-      "selfie-with-celebrities"
+      "add-christmas-tree-to-photo"
     ],
     "heading": "See Other Cool Image Effects"
   },
@@ -139,3 +139,4 @@
     ]
   }
 }
+

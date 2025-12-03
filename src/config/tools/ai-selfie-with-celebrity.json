@@ -1,29 +1,26 @@
 {
   "id": "selfie-with-celebrities",
-  "title": "AI Selfie with Celebrities",
-  "playgroundTitle": "AI Selfie with Celebrities Generator",
-  "playgroundDescription": "Our AI Selfie with Celebrities Generator lets you easily create realistic selfies with your favorite stars. Just upload your photo, pick a celebrity, & generate a lifelike selfie.",
-  "highlightWords": [
-    "Selfie",
-    "Celebrities"
-  ],
+  "title": "AI Selfie With Celebrities",
+  "playgroundTitle": "AI Selfie With Celebrities",
+  "playgroundDescription": "Take photos with celebrities using the AI Selfie With Celebrities filter. Turn any selfie into a realistic shot with your favorite stars for free online.",
+  "highlightWords": [],
   "metadata": {
-    "title": "AI Selfie with Celebrities Generator For Free",
-    "description": "Want a selfie with your favorite star? Our AI celebrity selfie generator lets you turn ordinary photos into selfies with any celebrity like actors, musicians, and more!",
+    "title": "AI Selfie With Celebrities – Take Photos With Your Favorite Stars",
+    "description": "The AI Selfie With Celebrities filter lets you make a photo with any star. Choose a celebrity, and it creates a selfie that looks like you posed together.",
     "alternates": {
-      "canonical": "https://www.remixai.io/image-effects/ai-selfie-with-celebrities"
+      "canonical": ""
     }
   },
-  "toolType": "selfie-with-celebrities",
+  "toolType": "image-effects",
   "toolCategory": "image-effects",
   "postPrefix": "image-effects",
-  "credit": 16,
-  "buttonText": "Apply Selfie with Celebrities Filter",
-  "inputType": "dual",
+  "credit": 40,
+  "buttonText": "Generate Now",
+  "inputType": "single",
   "effectId": "ai-selfie-with-celebrities",
   "model": "image-effects",
-  "cardImage": "https://assets.remixai.io/selfi-with-celebrity-cover-image.webp",
-  "cardVideo": "",
+  "cardImage": "https://assets.remixai.io/Public/samples/Red-Hulk-featured.webp",
+  "cardVideo": null,
   "transformationImages": {
     "transformationPreview": "https://assets.remixai.io/Public/featured-image/AI-selfie-with-celebrities-generator-1.webp",
     "transformationResult": " https://assets.remixai.io/Public/featured-image/AI-selfie-with-celebrities-generator-21.webp"
@@ -32,99 +29,119 @@
     "firstImageLabel": "Upload your image",
     "secondImageLabel": "Upload celebrity image"
   },
+  "recommendedEffects": {
+    "id": [
+      "ai-pregnant-filter",
+      "south-park-character",
+      "mugshot",
+      "ai-skinny-filter"
+    ],
+    "heading": "Check Out Other Trending Image Effects"
+  },
+  "examples": {
+    "heading": "Amazing Results From AI Selfie With Celebrities",
+    "title": "Amazing Results From AI Selfie With Celebrities",
+    "images": [
+      {
+        "image": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webm",
+        "alt": "AI Selfie with Celeberities"
+      },
+      {
+        "image": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webm",
+        "alt": "Selfie with Celeberities"
+      }
+    ]
+  },
   "sampleImages": [
     {
-      "mini": "https://assets.remixai.io/Public/samples/51.webp",
-      "original": "https://assets.remixai.io/Public/samples/51.webp"
+      "mini": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp",
+      "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
     },
     {
-      "mini": "https://assets.remixai.io/Public/samples/52.webp",
-      "original": "https://assets.remixai.io/Public/samples/52.webp"
+      "mini": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp",
+      "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
     },
     {
-      "mini": "https://assets.remixai.io/Public/samples/53.webp",
-      "original": "https://assets.remixai.io/Public/samples/53.webp"
+      "mini": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp",
+      "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
     },
     {
-      "mini": "https://assets.remixai.io/Public/samples/54.webp",
-      "original": "https://assets.remixai.io/Public/samples/54.webp"
-    },
-    {
-      "mini": "https://assets.remixai.io/Public/samples/55.webp",
-      "original": "https://assets.remixai.io/Public/samples/55.webp"
+      "mini": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp",
+      "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
     }
   ],
+  "faqs": {
+    "heading": "FAQs About AI Selfie With Celebrities",
+    "questions": [
+      {
+        "question": "What is the AI Selfie With Celebrities effect?",
+        "answer": "This effect uses AI to place you in a selfie with a celebrity. It edits your photo so it looks like you are standing next to a famous person."
+      },
+      {
+        "question": "Is the AI Selfie With Celebrities tool free to use?",
+        "answer": "Yes! You can start for free. Sign up on our website and get free credits to try the AI Selfie With Celebrities effect."
+      },
+      {
+        "question": "How do you ensure the privacy of my photos?",
+        "answer": "Your photos are safe. They are uploaded securely, used only for the selfie, and deleted automatically from our servers. We never share your photos."
+      },
+      {
+        "question": "Can I make multiple selfies with different celebrities?",
+        "answer": "Yes! You can create as many AI selfies as you like with different celebrities using your free credits or account balance."
+      },
+      {
+        "question": "Will my original photo be changed?",
+        "answer": "No, your original photo is never modified. The AI creates a new image with the celebrity while keeping your original safe."
+      }
+    ]
+  },
+  "testimonials": {
+    "heading": "What People Say about us",
+    "reviews": [
+      {
+        "review": "I had so much fun with this app! My friends couldn't believe the picture with my favorite actor was AI-generated.",
+        "name": "Sophia",
+        "designation": "iOS user from USA"
+      },
+      {
+        "review": "As a digital artist, I'm seriously impressed with the quality and realism. The Max Studio AI blends the images perfectly.",
+        "name": "Ethan",
+        "designation": "Digital Artist"
+      },
+      {
+        "review": "This tool is a game-changer! The AI selfies look so real, it's perfect for my content.",
+        "name": "Lucas",
+        "designation": "Content Creator"
+      }
+    ]
+  },
   "howItWorks": {
-    "heading": "How to Create AI Selfie With Celebrity?",
-    "description": "Easily generate a realistic selfie with your favorite celebrity in just a few steps:",
+    "heading": "How AI Celebrity Selfie Works?",
+    "description": "Follow these easy steps to create a realistic selfie featuring yourself and your favorite celebrities using AI technology.",
     "steps": [
       {
         "step": 1,
-        "title": "Upload Your Photo and Celebrity Image",
+        "title": "Choose Your Photo",
         "bulletPoints": [
-          "Select and upload your photo along with the celebrity image you want to appear with in the selfie. Ensure both images are clear and front-facing for the best results."
+          "Pick a clear, high-resolution photo with good lighting from your device to start."
         ]
       },
       {
         "step": 2,
-        "title": "Apply the AI Selfie Effect",
+        "title": "Generate AI Celebrity Selfie",
         "bulletPoints": [
-          "Click the “Apply Selfie with Celebrities Filter” button, and our AI will seamlessly merge your photo with the celebrity to create a realistic-looking selfie."
+          "Once your photo is uploaded, hit the 'Apply Image Effect' button to merge your selfie with the celebrity using AI."
         ]
       },
       {
         "step": 3,
-        "title": "Preview, and Download",
+        "title": "Save & Share",
         "bulletPoints": [
-          "Review the generated selfie. If you’re satisfied with the result, you can download the image or share it directly from the tool."
+          "Save your AI celebrity selfie to your device and show it off to friends, family, or on social media."
         ]
       }
     ]
-  },
-  "examples": {
-    "heading": "Some Real Examples of Our AI Anime Filter",
-    "title": "Some Real Examples of Our AI Anime Filter",
-    "description": "",
-    "images": [
-      {
-        "image": "https://assets.remixai.io/Public/featured-image/ie-Selfie-With-Celebrity-5.webp",
-        "alt": "AI Selfie with Celebrities Generator"
-      },
-      {
-        "image": "https://assets.remixai.io/Public/featured-image/ie-Selfie-With-Celebrity-6.webp",
-        "alt": "Free AI Selfie with Celebrities Generator"
-      }
-    ]
-  },
-  "faqs": {
-    "heading": "FAQs About Selfie With Celebrities",
-    "title": "FAQs About Selfie With Celebrities",
-    "description": "",
-    "questions": [
-      {
-        "question": "What is the AI Selfie with Celebrities Generator?",
-        "answer": "The AI Selfie with Celebrities Generator is an online tool that lets you create realistic selfies with your favorite celebrities by merging your photo with theirs using advanced AI."
-      },
-      {
-        "question": "How realistic are the generated selfies?",
-        "answer": "The AI combines your photo and the celebrity image to produce lifelike selfies. The quality of the result depends on the clarity and angle of the original images."
-      },
-      {
-        "question": "Can I use the AI Selfie with Celebrity Generator for free?",
-        "answer": "Yes, the tool is free to use. You just need to create an account, and you’ll receive free credits to generate multiple celebrity selfies."
-      },
-      {
-        "question": "Are my photos safe when using this tool?",
-        "answer": "Yes, all photos are processed securely, and we do not store or share your personal images."
-      }
-    ]
-  },
-  "recommendedEffects": {
-    "id": [
-      "ai-cartoon-generator",
-      "ai-skinny-filter",
-      "ai-body-shaper"
-    ],
-    "heading": "Other Popular Tools"
   }
 }
+
+

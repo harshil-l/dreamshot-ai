@@ -19,7 +19,7 @@
   "inputType": "single",
   "effectId": "pregnant",
   "model": "image-effects",
-  "cardImage": "https://assets.remixai.io/Pregenant-Cover-image.webp",
+  "cardImage": "https://assets.remixai.io/Public/samples/Red-Hulk-featured.webp",
   "cardVideo": null,
   "transformationImages": {
     "transformationPreview": "https://assets.remixai.io/Public/samples/Red-Hulk.webp"
@@ -27,9 +27,10 @@
   "dualUploadLabels": {},
   "recommendedEffects": {
     "id": [
-      "add-birthday-hat-to-photo",
-      "add-clouds-to-photo",
-      "add-crown-to-photo"
+      "south-park-character",
+      "mugshot",
+      "ai-skinny-filter",
+      "ai-fat-filter"
     ],
     "heading": "See Other Cool Image Effects"
   },
@@ -38,31 +39,35 @@
     "title": "See the Stunning Results",
     "images": [
       {
-        "image": "https://assets.remixai.io/Crying-Ex1.webp",
+        "image": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webm",
         "alt": "AI Pregnant Filter"
       },
       {
-        "image": "https://assets.remixai.io/Crying-Ex2.webp",
+        "image": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webm",
         "alt": "Pregnant Filter"
       }
     ]
   },
   "sampleImages": [
     {
-      "mini": "https://assets.remixai.io/pregenent-sample-1.webp",
-      "original": "https://assets.remixai.io/pregenent-sample-1.webp"
+      "mini": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp",
+      "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
     },
     {
-      "mini": "https://assets.remixai.io/pregenent-sample-2.webp",
-      "original": "https://assets.remixai.io/pregenent-sample-2.webp"
+      "mini": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp",
+      "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
     },
     {
-      "mini": "https://assets.remixai.io/pregenent-sample-3.webp",
-      "original": "https://assets.remixai.io/pregenent-sample-3.webp"
+      "mini": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp",
+      "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
     },
     {
-      "mini": "https://assets.remixai.io/pregenent-sample-4.webp",
-      "original": "https://assets.remixai.io/pregenent-sample-4.webp"
+      "mini": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp",
+      "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
+    },
+    {
+      "mini": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp",
+      "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
     }
   ],
   "faqs": {
@@ -99,7 +104,7 @@
         "designation": "iOS user from USA"
       },
       {
-        "review": "I used this for a social media post and my followers loved it. The quality from Dreamshot's filters is always top-notch.",
+        "review": "I used this for a social media post and my followers loved it. The quality from Max Studio's filters is always top-notch.",
         "name": "Ethan",
         "designation": "Content Creator"
       },
@@ -138,3 +143,4 @@
     ]
   }
 }
+

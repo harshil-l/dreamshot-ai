@@ -1,4 +1,4 @@
-{
+ {
   "id": "ai-winter-effect",
   "title": "AI Winter Effect",
   "playgroundTitle": "AI Winter Effect",
@@ -19,7 +19,7 @@
   "inputType": "single",
   "effectId": "aiWinterEffect",
   "model": "image-effects",
-  "cardImage": "https://assets.remixai.io/winter-cover-image.webp",
+  "cardImage": "https://assets.remixai.io/Public/samples/Red-Hulk-featured.webp",
   "cardVideo": null,
   "transformationImages": {
     "transformationPreview": "https://assets.remixai.io/Public/samples/Red-Hulk.webp"
@@ -27,9 +27,9 @@
   "dualUploadLabels": {},
   "recommendedEffects": {
     "id": [
-      "ai-sad-filter",
+      "change-image-to-fall-season",
       "ai-skinny-filter",
-      "ai-smile-filter",
+      "selfie-with-celebrities",
       "ai-pregnant-filter"
     ],
     "heading": "Related Popular Image Effects"
@@ -139,3 +139,4 @@
     ]
   }
 }
+

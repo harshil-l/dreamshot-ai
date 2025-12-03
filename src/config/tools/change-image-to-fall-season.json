@@ -19,7 +19,7 @@
   "inputType": "single",
   "effectId": "changeImageToFallSeason",
   "model": "image-effects",
-  "cardImage": "https://assets.remixai.io/fall-season-cover-image.webp",
+  "cardImage": "https://assets.remixai.io/Public/samples/Red-Hulk-featured.webp",
   "cardVideo": null,
   "transformationImages": {
     "transformationPreview": "https://assets.remixai.io/Public/samples/Red-Hulk.webp"
@@ -29,8 +29,8 @@
     "id": [
       "south-park-character",
       "selfie-with-celebrities",
-      "unblur-image",
-      "unpixelate-image"
+      "ai-winter-effect",
+      "baby-face-generator"
     ],
     "heading": "Try More Popular Image Effects"
   },
@@ -100,8 +100,8 @@
         "designation": "Content Creator"
       },
       {
-        "review": "I was skeptical at first, but wow! I turned a picture from my summer vacation into a gorgeous fall landscape in seconds Dreamshot did a great job with this.",
-        "name":"Ethan",
+        "review": "I was skeptical at first, but wow! I turned a picture from my summer vacation into a gorgeous fall landscape in seconds. Max Studio did a great job with this.",
+        "name": "Ethan",
         "designation": "iOS user from USA"
       },
       {
@@ -139,3 +139,8 @@
     ]
   }
 }
+
+
+
+
+

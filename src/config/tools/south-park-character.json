@@ -19,7 +19,7 @@
   "inputType": "single",
   "effectId": "south-park-character",
   "model": "image-effects",
-  "cardImage": "https://assets.remixai.io/south-park-cover-image.webp",
+  "cardImage": "https://assets.remixai.io/Public/samples/Red-Hulk-featured.webp",
   "cardVideo": null,
   "transformationImages": {
     "transformationPreview": "https://assets.remixai.io/Public/samples/Red-Hulk.webp"
@@ -27,10 +27,10 @@
   "dualUploadLabels": {},
   "recommendedEffects": {
     "id": [
-      "ai-fisheye-filter",
-      "ai-emoji-generator",
-      "ai-elf-filter",
-      "ai-gta-filter"
+      "ai-pregnant-filter",
+      "disney-pixar-filter",
+      "baby-face-generator",
+      "photo-to-sketch"
     ],
     "heading": "Check Out Other Trending Image Effects"
   },
@@ -95,7 +95,7 @@
     "heading": "What People Say about us",
     "reviews": [
       {
-        "review": "I'm obsessed! This South Park character creator from Dreamshot is a game-changer for my content. So easy to use and looks amazing.",
+        "review": "I'm obsessed! This South Park character creator from Max Studio is a game-changer for my content. So easy to use and looks amazing.",
         "name": "Olivia",
         "designation": "Content Creator"
       },
@@ -139,3 +139,4 @@
     ]
   }
 }
+

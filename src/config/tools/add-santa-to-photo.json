@@ -19,7 +19,7 @@
   "inputType": "single",
   "effectId": "addSantaToAPhoto",
   "model": "image-effects",
-  "cardImage": "https://assets.remixai.io/add-santa-to-photo-cover-image.webp",
+  "cardImage": "https://assets.remixai.io/Public/samples/Red-Hulk-featured.webp",
   "cardVideo": null,
   "transformationImages": {
     "transformationPreview": "https://assets.remixai.io/Public/samples/Red-Hulk.webp"
@@ -27,10 +27,10 @@
   "dualUploadLabels": {},
   "recommendedEffects": {
     "id": [
-      "elevator-photo-generator",
+      "ai-winter-effect",
       "mugshot",
-      "open-closed-eyes-in-photo",
-      "ai-smile-filter"
+      "add-christmas-tree-to-photo",
+      "make-me-santa"
     ],
     "heading": "See Other Cool Image Effects"
   },
@@ -139,3 +139,4 @@
     ]
   }
 }
+

@@ -19,7 +19,7 @@
   "inputType": "single",
   "effectId": "disney-pixar",
   "model": "image-effects",
-  "cardImage": "https://assets.remixai.io/disney-pixar-cover-image.webp",
+  "cardImage": "https://assets.remixai.io/Public/samples/Red-Hulk-featured.webp",
   "cardVideo": null,
   "transformationImages": {
     "transformationPreview": "https://assets.remixai.io/Public/samples/Red-Hulk.webp"
@@ -28,9 +28,9 @@
   "recommendedEffects": {
     "id": [
       "mugshot",
-      "open-closed-eyes-in-photo",
-      "pixel-art-upscaler",
-      "ai-gta-filter"
+      "ai-skinny-filter",
+      "south-park-character",
+      "action-figure-generator"
     ],
     "heading": "See Other Cool Image Effects"
   },
@@ -100,7 +100,7 @@
         "designation": "Content Creator"
       },
       {
-        "review": "Honestly, the quality is amazing. Dreamshot's AI really captures the Pixar vibe perfectly. Highly recommend giving it a try!",
+        "review": "Honestly, the quality is amazing. Max Studio's AI really captures the Pixar vibe perfectly. Highly recommend giving it a try!",
         "name": "Lucas",
         "designation": "iOS user from USA"
       },
@@ -139,3 +139,4 @@
     ]
   }
 }
+

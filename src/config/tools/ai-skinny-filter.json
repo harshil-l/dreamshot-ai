@@ -19,7 +19,7 @@
   "inputType": "single",
   "effectId": "skinny",
   "model": "image-effects",
-  "cardImage": "https://assets.remixai.io/skinny-cover-image.webp",
+  "cardImage": "https://assets.remixai.io/Public/samples/Red-Hulk-featured.webp",
   "cardVideo": null,
   "transformationImages": {
     "transformationPreview": "https://assets.remixai.io/Public/samples/Red-Hulk.webp"
@@ -28,9 +28,9 @@
   "recommendedEffects": {
     "id": [
       "selfie-with-celebrities",
-      "ai-lookism-filter",
-      "add-flower-crown-to-photo",
-      "add-crown-to-photo"
+      "add-christmas-tree-to-photo",
+      "plush-pillow-generator",
+      "make-me-santa"
     ],
     "heading": "Discover Other Popular Image Effects"
   },
@@ -95,7 +95,7 @@
     "heading": "What People Say about us",
     "reviews": [
       {
-        "review": "This is a game-changer for my editing workflow. The Ai Skinny Filter from Dreamshot gives my photos that perfect touch without looking fake.",
+        "review": "This is a game-changer for my editing workflow. The Ai Skinny Filter from Max Studio gives my photos that perfect touch without looking fake.",
         "name": "Olivia",
         "designation": "Content Creator"
       },
@@ -139,3 +139,4 @@
     ]
   }
 }
+

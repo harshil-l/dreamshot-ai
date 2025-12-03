@@ -19,7 +19,7 @@
   "inputType": "single",
   "effectId": "silhouette",
   "model": "image-effects",
-  "cardImage": "https://assets.remixai.io/silhouette-cover-image.webp",
+  "cardImage": "https://assets.remixai.io/Public/samples/Red-Hulk-featured.webp",
   "cardVideo": null,
   "transformationImages": {
     "transformationPreview": "https://assets.remixai.io/Public/samples/Red-Hulk.webp"
@@ -27,10 +27,9 @@
   "dualUploadLabels": {},
   "recommendedEffects": {
     "id": [
-      "ai-gta-filter",
-      "ai-sad-filter",
+      "disney-pixar-filter",
+      "photo-to-sketch",
       "ai-skinny-filter",
-      "ai-smile-filter",
       "mugshot"
     ],
     "heading": "See Other Cool Image Effects"
@@ -96,7 +95,7 @@
     "heading": "What People Say about us",
     "reviews": [
       {
-        "review": "This filter is a game-changer for my social media posts. The silhouette effect is stunning and so easy to use with Dreammshot.",
+        "review": "This filter is a game-changer for my social media posts. The silhouette effect is stunning and so easy to use with Max Studio.",
         "name": "Charlotte",
         "designation": "Content Creator"
       },
@@ -140,3 +139,4 @@
     ]
   }
 }
+

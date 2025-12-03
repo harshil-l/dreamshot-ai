@@ -19,7 +19,7 @@
   "inputType": "single",
   "effectId": "action-figure",
   "model": "image-effects",
-  "cardImage": "https://assets.remixai.io/action-figure-cover-image.webp",
+  "cardImage": "https://assets.remixai.io/Public/samples/Red-Hulk-featured.webp",
   "cardVideo": null,
   "transformationImages": {
     "transformationPreview": "https://assets.remixai.io/Public/samples/Red-Hulk.webp"
@@ -28,8 +28,8 @@
   "recommendedEffects": {
     "id": [
       "mugshot",
-      "ai-selfie-with-celebrity",
-      "add-santa-to-photo",
+      "selfie-with-celebrities",
+      "change-image-to-fall-season",
       "ai-skinny-filter"
     ],
     "heading": "Discover Other Popular Image Effects"
@@ -100,7 +100,7 @@
         "designation": "Digital Artist"
       },
       {
-        "review": "So much fun to use! The Dreamshot team really nailed the simplicity without sacrificing creativity.",
+        "review": "So much fun to use! The Max Studio team really nailed the simplicity without sacrificing creativity.",
         "name": "Sophia",
         "designation": "Web user from UK"
       },
@@ -139,3 +139,4 @@
     ]
   }
 }
+

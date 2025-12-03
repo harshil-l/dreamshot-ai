@@ -19,7 +19,7 @@
   "inputType": "single",
   "effectId": "plushPillowGenerator",
   "model": "image-effects",
-  "cardImage": "https://assets.remixai.io/plush-pillow-cover-image.webp",
+  "cardImage": "https://assets.remixai.io/Public/samples/Red-Hulk-featured.webp",
   "cardVideo": null,
   "transformationImages": {
     "transformationPreview": "https://assets.remixai.io/Public/samples/Red-Hulk.webp"
@@ -27,10 +27,10 @@
   "dualUploadLabels": {},
   "recommendedEffects": {
     "id": [
-      "add-flower-crown-to-photo",
-      "add-crown-to-photo",
-      "add-clouds-to-photo",
-      "ai-elf-filter"
+      "ai-pregnant-filter",
+      "south-park-character",
+      "ai-fat-filter",
+      "photo-to-sketch"
     ],
     "heading": "Discover Other Popular Image Effects"
   },
@@ -139,3 +139,4 @@
     ]
   }
 }
+
