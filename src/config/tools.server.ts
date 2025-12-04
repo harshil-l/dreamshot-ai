@@ -25,12 +25,20 @@ export interface ToolConfigJson {
     cardImage?: string;
     cardVideo?: string;
     recommendedImage?: string;
+    testimonials?: {
+        heading: string;
+        reviews: Array<{
+            review: string;
+            name: string;
+            designation: string;
+        }>;
+    };
     dualUploadLabels?: {
         firstImageLabel: string;
         secondImageLabel: string;
     } | null;
     sampleImages: Array<{ mini: string; original: string }>;
-    howItWorks: {
+    howItWorks?: {
         heading: string;
         description: string;
         steps: Array<{
@@ -39,17 +47,17 @@ export interface ToolConfigJson {
             bulletPoints: string[];
         }>;
     };
-    examples: {
+    examples?: {
         heading: string;
         title: string;
         description: string;
         images: Array<{ image: string; alt?: string }>;
     };
-    recommendedEffects: {
+    recommendedEffects?: {
         heading: string;
         id: string[];
     };
-    faqs: {
+    faqs?: {
         heading: string;
         questions: Array<{ question: string; answer: string }>;
     };

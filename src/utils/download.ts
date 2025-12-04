@@ -1,12 +1,5 @@
 import { customToast } from "@/common";
 
-/**
- * Downloads a file from a URL
- * Creates a temporary anchor element to trigger the download
- * @param url - The URL of the file to download
- * @param filename - Optional custom filename (defaults to generated name)
- * @param fileType - Type of file ("video" or "image") for extension
- */
 export function downloadFile(
     url: string,
     filename?: string,
@@ -23,29 +16,59 @@ export function downloadFile(
     console.log(`[DOWNLOAD] 📥 Downloading file:`, { url, filename: defaultFilename, fileType });
 
     try {
-        // Create a temporary anchor element to trigger download
+        // For cross-origin URLs, fetch the file and create a blob URL
+        // This ensures direct download without opening a new tab
+        if (url.startsWith('http://') || url.startsWith('https://')) {
+            fetch(url)
+                .then(response => response.blob())
+                .then(blob => {
+                    const blobUrl = window.URL.createObjectURL(blob);
         const link = document.createElement("a");
-        link.href = url;
+                    link.href = blobUrl;
         link.download = defaultFilename;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer"; // Security best practice
+                    link.rel = "noopener noreferrer";
         
         // Append to body, click, then remove
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    
+                    // Clean up the blob URL
+                    window.URL.revokeObjectURL(blobUrl);
+                    
+                    customToast.success("Download started!");
+                })
+                .catch(error => {
+                    console.error(`[DOWNLOAD] ❌ Fetch failed, trying direct download:`, error);
+                    // Fallback to direct download if fetch fails
+                    const link = document.createElement("a");
+                    link.href = url;
+                    link.download = defaultFilename;
+                    link.rel = "noopener noreferrer";
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    customToast.success("Download started!");
+                });
+        } else {
+            // For same-origin URLs, use direct download
+            const link = document.createElement("a");
+            link.href = url;
+            link.download = defaultFilename;
+            link.rel = "noopener noreferrer";
+            
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
 
         customToast.success("Download started!");
+        }
     } catch (error) {
         console.error(`[DOWNLOAD] ❌ Download failed:`, error);
         customToast.error("Failed to download file");
     }
 }
 
-/**
- * Downloads a generation result (video or image)
- * @param item - Generation result object with video/image/thumbnail and type
- */
 export function downloadGenerationResult(item: {
     video?: string;
     image?: string;

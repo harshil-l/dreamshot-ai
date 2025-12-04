@@ -14,7 +14,7 @@ import {
     ContactIcon,
     CreationIcon,
     FeedbackIcon,
-    
+
 } from "@/components/Icons";
 import {
     Popover,
@@ -69,7 +69,7 @@ const UserAccount = () => {
                                         onError={(e) => {
                                             e.currentTarget.onerror = null;
                                             e.currentTarget.src = `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="#404040"/><text x="50" y="50" font-size="50" text-anchor="middle" dy=".3em" fill="white">${(typeof user !== "string" &&
-                                                    user?.email?.[0]?.toUpperCase()) ||
+                                                user?.email?.[0]?.toUpperCase()) ||
                                                 "?"
                                                 }</text></svg>`;
                                         }}
@@ -83,7 +83,7 @@ const UserAccount = () => {
                             </PopoverTrigger>
                             <PopoverContent
                                 align="center"
-                                className="backdrop-blur-2xl rounded-4xl mt-4 backdrop-filter bg-sBackground border-2 border-white/10  pt-6 pb-3 px-0 w-72 user-account-popover-shadow"
+                                className="bg-white rounded-2xl mt-4 border-2 border-white/10 pt-6 pb-3 px-0 w-72 user-account-popover-shadow"
                             >
                                 {/* User Info */}
                                 <div className="flex items-center gap-3 mb-6 px-6">
@@ -96,7 +96,7 @@ const UserAccount = () => {
                                                 onError={(e) => {
                                                     e.currentTarget.onerror = null;
                                                     e.currentTarget.src = `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="#404040"/><text x="50" y="50" font-size="50" text-anchor="middle" dy=".3em" fill="white">${(typeof user !== "string" &&
-                                                            user?.email?.[0]?.toUpperCase()) ||
+                                                        user?.email?.[0]?.toUpperCase()) ||
                                                         "?"
                                                         }</text></svg>`;
                                                 }}
@@ -125,7 +125,7 @@ const UserAccount = () => {
                                             variant="dark"
                                             className="w-full outline-none focus-visible:outline-none border-none py-2.5 cursor-pointer"
                                             onClick={() => {
-                                                router.push("/price");
+                                                router.push("/pricing");
                                                 setOpenPopover(false);
                                             }}
                                         >
@@ -135,7 +135,7 @@ const UserAccount = () => {
                                         <Button
                                             className="w-full outline-none border-none py-2.5"
                                             onClick={() => {
-                                                    handleDialogType("addCredit", "add");
+                                                handleDialogType("addCredit", "add");
                                                 setOpenPopover(false);
                                             }}
                                             variant="default"
@@ -219,7 +219,7 @@ const UserAccount = () => {
                                     <Button
                                         className="flex  items-center justify-start gap-2 cursor-pointer hover:opacity-80 py-2 bg-transparent border-none hover:bg-black/10 outline-none w-full text-foreground"
                                         onClick={() => {
-                                            router.push("/my-creations");
+                                            router.push("/history");
                                             setOpenPopover(false);
                                         }}
                                     >

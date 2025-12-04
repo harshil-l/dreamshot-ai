@@ -13,33 +13,34 @@ interface ImagePreviewProps {
 /**
  * Reusable image preview component
  * Displays preview image(s) with optional transformation arrow
+ * Images fill available space while maintaining aspect ratio
  */
 export function ImagePreview({ previewUrl, resultUrl, showArrow = false }: ImagePreviewProps) {
     if (resultUrl && showArrow) {
-        // Show both images with arrow
+        // Show both images with arrow (side by side transformation) - fixed height
         return (
-            <div className="flex items-center justify-center md:gap-12 mb-10">
-                <div className="relative flex items-center justify-center" style={{ minHeight: 160, minWidth: 320 }}>
-                    <div className="flex items-center justify-center gap-0 relative" style={{ width: 250 }}>
-                        <div className="z-10 shadow-2xl rounded-xl overflow-hidden transition-transform hover:scale-105 duration-300 relative">
+            <div className="flex items-center justify-center w-full h-[320px] md:h-[380px] lg:h-[420px]">
+                <div className="relative flex items-center justify-center w-full">
+                    <div className="flex items-center justify-center gap-0 relative">
+                        <div className="z-10 rounded-xl overflow-hidden relative h-full w-[120px] sm:w-[150px] md:w-[180px] lg:w-[200px]">
                             <Image
                                 src={previewUrl}
                                 alt="Original Preview"
-                                width={125}
-                                height={160}
-                                className="object-cover w-[125px] h-40"
+                                fill
+                                className="object-contain"
+                                sizes="(max-width: 640px) 120px, (max-width: 768px) 150px, (max-width: 1024px) 180px, 200px"
                             />
                         </div>
-                        <div className="z-20 shadow-2xl rounded-xl overflow-hidden transition-transform hover:scale-105 duration-300 relative" style={{ marginLeft: -28 }}>
+                        <div className="z-20 rounded-xl overflow-hidden relative h-full w-[120px] sm:w-[150px] md:w-[180px] lg:w-[200px] -ml-4 sm:-ml-6 md:-ml-7">
                             <Image
                                 src={resultUrl}
                                 alt="Transformed Preview"
-                                width={125}
-                                height={160}
-                                className="object-cover w-[125px] h-40"
+                                fill
+                                className="object-contain"
+                                sizes="(max-width: 640px) 120px, (max-width: 768px) 150px, (max-width: 1024px) 180px, 200px"
                             />
                         </div>
-                        <div className="absolute z-30 left-[46%] -translate-x-1/2 top-[60%]">
+                        <div className="absolute z-30 left-[45%] sm:left-[46%] md:left-[47%] -translate-x-1/2 top-[55%] sm:top-[60%]">
                             <TransformationArrowIcon />
                         </div>
                     </div>
@@ -48,19 +49,17 @@ export function ImagePreview({ previewUrl, resultUrl, showArrow = false }: Image
         );
     }
 
-    // Show single preview image
+    // Show single preview image - fixed height for consistency
     return (
-        <div className="flex items-center justify-center md:gap-12 mb-10">
-            <div className="relative flex items-center justify-center" style={{ minHeight: 160, minWidth: 320 }}>
-                <div className="shadow-2xl rounded-xl overflow-hidden transition-transform hover:scale-105 duration-300">
-                    <Image
-                        src={previewUrl}
-                        alt="Preview"
-                        width={200}
-                        height={250}
-                        className="object-cover rounded-xl"
-                    />
-                </div>
+        <div className="flex items-center justify-center w-full">
+            <div className="relative w-full h-[320px] md:h-[380px] lg:h-[420px] rounded-xl overflow-hidden bg-gray-50 flex items-center justify-center">
+                <Image
+                    src={previewUrl}
+                    alt="Preview"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 1200px"
+                />
             </div>
         </div>
     );

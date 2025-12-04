@@ -1,6 +1,6 @@
 import TextSeparator from "../TextSeparator";
 import ToolCard from "../PopularTool/ToolCard";
-import { DASHBOARD_POPULAR_TOOLS } from "@/constants/dashboard.constants";
+import { DASHBOARD_POPULAR_TOOLS } from "@/constants/static.content.constants";
 import { ToolConfigJson } from "@/config/tools.server";
 import { DashboardPopularTool } from "@/types";
 import Link from "next/link";
@@ -29,13 +29,13 @@ export default function SimilarTools({
     }
 
     return (
-        <div className="flex flex-col items-center gap-10 justify-center mt-15 px-4">
+        <div className="flex flex-col items-center max-w-7xl mx-auto mt-4 md:mt-16 gap-3 w-full justify-center px-4 ">
             <TextSeparator textSeparatorText="Similar Tools" />
             <h1 className="text-2xl md:text-3xl lg:text-4xl text-center font-bold px-4">
                 {title}
             </h1>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 w-full max-w-7xl px-4">
+            <div className="grid mt-4 md:mt-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 w-full px-4 ">
                 {toolsToDisplay.map((tool, index) => {
                     // If we have recommended tools with IDs, create links to their pages
                     const toolConfig = recommendedTools?.[index];
@@ -48,11 +48,13 @@ export default function SimilarTools({
                     );
 
                     return toolUrl ? (
-                        <Link key={index} href={toolUrl} className="hover:opacity-80 transition-opacity">
+                        <Link key={index} href={toolUrl} className="flex items-center justify-center hover:opacity-80 transition-opacity">
                             {cardContent}
                         </Link>
                     ) : (
-                        cardContent
+                        <div className="flex items-center justify-center">
+                            {cardContent}
+                        </div>
                     );
                 })}
             </div>
