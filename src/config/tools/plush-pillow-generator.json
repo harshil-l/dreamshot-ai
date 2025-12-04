@@ -19,7 +19,7 @@
   "inputType": "single",
   "effectId": "plushPillowGenerator",
   "model": "image-effects",
-  "cardImage": "https://assets.remixai.io/Public/samples/Red-Hulk-featured.webp",
+  "cardImage": "https://assets.remixai.io/plush-pillow-cover-image.webp",
   "cardVideo": null,
   "transformationImages": {
     "transformationPreview": "https://assets.remixai.io/Public/samples/Red-Hulk.webp"
@@ -50,20 +50,20 @@
   },
   "sampleImages": [
     {
-      "mini": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp",
-      "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
+      "mini": "https://assets.remixai.io/sample-image-17.webp",
+      "original": "https://assets.remixai.io/sample-image-17.webp"
     },
     {
-      "mini": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp",
-      "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
+      "mini": "https://assets.remixai.io/sample-image-18.webp",
+      "original": "https://assets.remixai.io/sample-image-18.webp"
     },
     {
-      "mini": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp",
-      "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
+      "mini": "https://assets.remixai.io/sample-image-19.webp",
+      "original": "https://assets.remixai.io/sample-image-19.webp"
     },
     {
-      "mini": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp",
-      "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
+      "mini": "https://assets.remixai.io/sample-image-20.webp",
+      "original": "https://assets.remixai.io/sample-image-20.webp"
     }
   ],
   "faqs": {
