@@ -20,7 +20,7 @@
   "effectId": "frostyTheSnowman",
   "model": "image-effects",
   "cardImage": "https://assets.remixai.io/snowman-cover-image.webp",
-  "cardVideo": "",
+  "cardVideo": null,
   "transformationImages": {
     "transformationPreview": "https://assets.remixai.io/Public/samples/Red-Hulk.webp"
   },
@@ -113,7 +113,7 @@
   },
   "howItWorks": {
     "heading": "How Does It Work?",
-    "description": "",
+    "description": "Follow these simple steps to transform your image into a Forsty Snowman.",
     "steps": [
       {
         "step": 1,
