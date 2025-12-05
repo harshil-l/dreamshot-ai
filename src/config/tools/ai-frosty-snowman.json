@@ -1,0 +1,122 @@
+{
+  "id": "ai-frosty-snowman",
+  "title": "AI Frosty Snowman Filter",
+  "playgroundTitle": "AI Frosty Snowman Filter",
+  "playgroundDescription": "Bring your photos to life with the AI Frosty the Snowman Generator. Watch your images become playful snowman characters with snowy accents and festive winter charm.",
+  "highlightWords": [],
+  "metadata": {
+    "title": "AI Frosty Snowman Generator Free For Online",
+    "description": "Turn your photos into snowman characters with our free AI Frosty the Snowman filter, adding snowy details and festive winter vibes!",
+    "alternates": {
+      "canonical": ""
+    }
+  },
+  "toolType": "image-effects",
+  "toolCategory": "image-effects",
+  "postPrefix": "image-effects",
+  "credit": 40,
+  "buttonText": "Apply Snowman Filter",
+  "inputType": "single",
+  "effectId": "frostyTheSnowman",
+  "model": "image-effects",
+  "cardImage": "https://assets.remixai.io/Public/samples/Make-me-Santa-featured.webp",
+  "cardVideo": null,
+  "transformationImages": {
+    "transformationPreview": "https://assets.remixai.io/Public/samples/Make-me-Santa.webp"
+  },
+  "dualUploadLabels": {},
+  "recommendedEffects": {
+    "id": [
+      "add-santa-hat-to-photo",
+      "add-santa-to-photo",
+      "add-christmas-tree-to-photo",
+      "christmas-party-glam"
+    ],
+    "heading": "See Other Cool Image Effects"
+  },
+  "faqs": {
+    "heading": "FAQs About AI Frosty Snowman Filter",
+    "questions": [
+      {
+        "question": "What is the Frosty The Snowman effect?",
+        "answer": "The Frosty The Snowman effect is a fun AI image filter that turns your photos into a snowy, festive scene. It adds snow, frost, and a cheerful wintery look to your pictures."
+      },
+      {
+        "question": "How long does it take to apply the Frosty The Snowman effect?",
+        "answer": "It usually takes just a few seconds. The time can vary depending on your image size and details, but our AI works fast to give you your transformed photo quickly."
+      },
+      {
+        "question": "Is this Frosty The Snowman tool free?",
+        "answer": "Yes! Just sign up for a free account, and you'll get some free credits to try this effect and other AI tools on our site."
+      },
+      {
+        "question": "Is it safe to upload my photos? What about my privacy?",
+        "answer": "Yes, your privacy is important to us. All photos are processed securely and deleted from our servers after a short time. We never share your images with anyone."
+      },
+      {
+        "question": "What image file formats can I upload?",
+        "answer": "You can upload JPEG, PNG, or WEBP images. Make sure your file is under 10MB for the best results."
+      }
+    ]
+  },
+  "examples": {
+    "heading": "See the Stunning Results",
+    "title": "See the Stunning Results",
+    "description": "",
+    "images": [
+      {
+        "image": "https://assets.remixai.io/Public/samples/Make-me-Santa-Ex1.webp",
+        "alt": "Make Me Santa"
+      },
+      {
+        "image": "https://assets.remixai.io/Public/samples/Make-me-Santa-Ex2.webp",
+        "alt": "AI Santa Filter"
+      }
+    ]
+  },
+  "sampleImages": [
+    {
+      "mini": "https://assets.remixai.io/Public/samples/Santa-1.webp",
+      "original": "https://assets.remixai.io/Public/samples/Santa-1.webp"
+    },
+    {
+      "mini": "https://assets.remixai.io/Public/samples/Santa-2.webp",
+      "original": "https://assets.remixai.io/Public/samples/Santa-2.webp"
+    },
+    {
+      "mini": "https://assets.remixai.io/Public/samples/Santa-3.webp",
+      "original": "https://assets.remixai.io/Public/samples/Santa-3.webp"
+    },
+    {
+      "mini": "https://assets.remixai.io/Public/samples/Santa-4.webp",
+      "original": "https://assets.remixai.io/Public/samples/Santa-4.webp"
+    }
+  ],
+  "howItWorks": {
+    "heading": "How AI Frosty Snowman Filter Works?",
+    "description": "",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Upload Photo",
+        "bulletPoints": [
+          "Select & Upload photos from your device to apply AI Frosty Snowman Filter, and make sure uploaded photos must be in high quality with a well-lit background."
+        ]
+      },
+      {
+        "step": 2,
+        "title": "Apply AI Frosty Snowman Filter",
+        "bulletPoints": [
+          "After the photo is uploaded click on the “Apply Image Effect” button to apply AI Frosty Snowman Filter to your photo."
+        ]
+      },
+      {
+        "step": 3,
+        "title": "Download & Share",
+        "bulletPoints": [
+          "Download your generated AI Frosty Snowman Filter photo to your device and share it on your favorite social media platform, and with your friends and family."
+        ]
+      }
+    ]
+  }
+}
