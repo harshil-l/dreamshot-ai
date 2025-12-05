@@ -13,13 +13,13 @@
   },
   "toolType": "image-effects",
   "toolCategory": "image-effects",
-  "postPrefix": "video-effects",
+  "postPrefix": "image-effects",
   "credit": 40,
   "buttonText": "Generate Now",
   "inputType": "single",
   "effectId": "santaGivingGift",
   "model": "image-effects",
-  "cardImage": "https://assets.remixai.io/santa-give-gift-cover-image.webp",
+  "cardImage": "https://assets.remixai.io/Public/samples/Red-Hulk-featured.webp",
   "cardVideo": null,
   "transformationImages": {
     "transformationPreview": "https://assets.remixai.io/Public/samples/Red-Hulk.webp"
@@ -50,83 +50,92 @@
   },
   "sampleImages": [
     {
-      "mini": "https://assets.remixai.io/sample-image-45.webp",
-      "original": "https://assets.remixai.io/sample-image-45.webp"
+      "mini": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp",
+      "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
     },
     {
-      "mini": "https://assets.remixai.io/sample-image-46.webp",
-      "original": "https://assets.remixai.io/sample-image-46.webp"
+      "mini": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp",
+      "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
     },
     {
-      "mini": "https://assets.remixai.io/sample-image-47.webp",
-      "original": "https://assets.remixai.io/sample-image-47.webp"
+      "mini": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp",
+      "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
     },
     {
-      "mini": "https://assets.remixai.io/sample-image-48.webp",
-      "original": "https://assets.remixai.io/sample-image-48.webp"
+      "mini": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp",
+      "original": "https://assets.remixai.io/Public/samples/Red-Hulk-1.webp"
     }
   ],
   "faqs": {
-    "heading": "Frequently Asked Questions about Santa Giving Gift",
+    "heading": "FAQs About Santa Giving Gift",
     "questions": [
-    {
-      "question": "What is the 'Santa Giving Gift' effect?",
-      "answer": "The 'Santa Giving Gift' effect is an AI effect that turns your photo into a festive scene where Santa Claus looks like he's giving a gift. It adds a fun, holiday touch to your picture."
-    },
-    {
-      "question": "Is it free to use the 'Santa Giving Gift' effect?",
-      "answer": "Yes! Just sign up for a free account, and you'll get free credits to try this effect and other AI effect on our website."
-    },
-    {
-      "question": "Are my uploaded photos safe and private?",
-      "answer": "Yes. Your photos are uploaded securely, used only to create the effect, and are never shared with anyone. They are deleted from our servers after a short time."
-    },
-    {
-      "question": "Can I customize Santa's gift or pose?",
-      "answer": "Currently, the AI automatically adds the gift and pose. This ensures the result looks natural and festive without needing any manual edits."
-    },
-    {
-      "question": "Can I use this tool on my mobile device?",
-      "answer": "Yes! The tool is fully web-based, so you can upload photos and create Santa images directly from your smartphone or tablet."
-    }
-  ]
-},
+      {
+        "question": "What is the 'Santa Giving Gift' effect?",
+        "answer": "The 'Santa Giving Gift' effect is an AI effect that turns your photo into a festive scene where Santa Claus looks like he's giving a gift. It adds a fun, holiday touch to your picture."
+      },
+      {
+        "question": "Is it free to use the 'Santa Giving Gift' effect?",
+        "answer": "Yes! Just sign up for a free account, and you'll get free credits to try this effect and other AI effect on our website."
+      },
+      {
+        "question": "Are my uploaded photos safe and private?",
+        "answer": "Yes. Your photos are uploaded securely, used only to create the effect, and are never shared with anyone. They are deleted from our servers after a short time."
+      },
+      {
+        "question": "Can I customize Santa's gift or pose?",
+        "answer": "Currently, the AI automatically adds the gift and pose. This ensures the result looks natural and festive without needing any manual edits."
+      },
+      {
+        "question": "Can I use this tool on my mobile device?",
+        "answer": "Yes! The tool is fully web-based, so you can upload photos and create Santa images directly from your smartphone or tablet."
+      }
+    ]
+  },
   "testimonials": {
     "heading": "What People Say about us",
     "reviews": [
       {
-        "review": "Absolutely magical! The Santa pictures turned out way better than I expected. My family loved them.",
-        "name": "Olivia",
+        "review": "Absolutely magical! The kids were overjoyed and the whole experience felt so authentic.",
+        "name": "Charlotte",
         "designation": "Content Creator"
       },
       {
-        "review": "This is so much fun to play with. I made a festive profile picture using Dreamshot in just a few clicks.",
-        "name": "Ethan",
-        "designation": "Web user from USA"
+        "review": "This was so much fun to create. Dreamshot made it super easy to get the perfect 'Santa giving a gift' scene.",
+        "name": "Elijah",
+        "designation": "iOS user from USA"
       },
       {
-        "review": "I'm genuinely impressed. It's incredibly easy to create such high-quality holiday images.",
-        "name": "Sophia",
-        "designation": "Visual Storyteller"
+        "review": "The quality is amazing. It looks like a real photograph!",
+        "name": "Stella",
+        "designation": "Digital Artist"
       }
     ]
   },
-  "howItWorksHeading": "How Santa Giving Gift Works?",
-  "howItWorks": [
-    {
-      "step": 1,
-      "title": "Upload Photo",
-      "description": "Select & Upload photos from your device to apply Santa Giving Gift, and make sure uploaded photos must be in high quality with a well-lit background."
-    },
-    {
-      "step": 2,
-      "title": "Apply Santa Giving Gift",
-      "description": "After the photo is uploaded click on the “Generate Now” button to apply Santa Giving Gift to your photo."
-    },
-    {
-      "step": 3,
-      "title": "Download & Share",
-      "description": "Download your generated Santa Giving Gift to your device and share it on your favorite social media platform, and with your friends and family."
-    }
-  ]
+  "howItWorks": {
+    "heading": "How Santa Giving Gift Works?",
+    "description": "",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Upload Photo",
+        "bulletPoints": [
+          "Select & Upload photos from your device to apply Santa Giving Gift, and make sure uploaded photos must be in high quality with a well-lit background."
+        ]
+      },
+      {
+        "step": 2,
+        "title": "Apply Santa Giving Gift",
+        "bulletPoints": [
+          "After the photo is uploaded click on the “Generate Now” button to apply Santa Giving Gift to your photo."
+        ]
+      },
+      {
+        "step": 3,
+        "title": "Download & Share",
+        "bulletPoints": [
+          "Download your generated Santa Giving Gift to your device and share it on your favorite social media platform, and with your friends and family."
+        ]
+      }
+    ]
+  }
 }
